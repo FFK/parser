@@ -20,7 +20,7 @@ public class FileReader {
 	}
 	
 	public static File getCurrentDirectory() {
-		return new File(System.getProperty("user.dir"));
+		return new File(System.getProperty("user.dir") + "\\input");
 	}
 
 }
