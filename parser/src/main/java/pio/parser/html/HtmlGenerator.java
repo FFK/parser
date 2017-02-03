@@ -2,7 +2,9 @@ package pio.parser.html;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.hp.gagawa.java.elements.Td;
 import com.hp.gagawa.java.elements.Tr;
@@ -15,6 +17,7 @@ import pio.parser.model.Performance;
 import pio.parser.model.PerformncesByEdition;
 import pio.parser.model.Results;
 import pio.parser.model.Score;
+import pio.parser.results.Competition;
 
 public class HtmlGenerator {
 
@@ -29,8 +32,8 @@ public class HtmlGenerator {
 		}
 	}
 
-	public static String createCompetitiorRows(Results results) {
-		String res = "";
+	public static Map<Competition, String> createCompetitiorRows(Results results) {
+		Map<Competition, String> res = new HashMap<>();
 
 		List<Competitor> competitors = new ArrayList<Competitor>(results.getPerformancesMapsByCompetitor().keySet());
 		Collections.sort(competitors);
@@ -43,10 +46,13 @@ public class HtmlGenerator {
 				position = 1;
 				group = competitor.getGroup();
 				sex = competitor.getSex();
-				res += "<tr style=\"height: 50px;\"></tr>";
 			}
-			res += createCompetitorRow(competitor, results.getPerformancesMapsByCompetitor().get(competitor),
-					results.getEditions(), position);
+			Competition competition = Competition.getCompetition(competitor.getGroup(), competitor.getSex());
+			if (!res.containsKey(competition)) {
+				res.put(competition, "");
+			}
+			res.put(competition, res.get(competition) + createCompetitorRow(competitor, results.getPerformancesMapsByCompetitor().get(competitor),
+					results.getEditions(), position));
 			position++;
 
 		}
@@ -71,11 +77,6 @@ public class HtmlGenerator {
 		clubTd.appendText(competitor.getClub());
 		clubTd.setCSSClass("wide");
 		tr.appendChild(clubTd);
-
-		Td categoryTd = new Td();
-		categoryTd.appendText(getCategoryLabel(competitor));
-		categoryTd.setCSSClass("wide");
-		tr.appendChild(categoryTd);
 
 		Td pickResTd = new Td();
 		pickResTd.appendText(createTopAndBonusesLabel(competitor.getScoreBest()));

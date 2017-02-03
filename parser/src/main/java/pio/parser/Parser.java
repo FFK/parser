@@ -32,7 +32,7 @@ public class Parser {
 		List<EditionResults> editionResults = ResultsReader.readResultFiles();
 		Results results = sumEditionResults(editionResults);
 		calculateScores(results);
-		ResultWriter.createResultFile(HtmlGenerator.createCompetitiorRows(results));
+		ResultWriter.createResultFiles(HtmlGenerator.createCompetitiorRows(results));
 	}
 
 	private static Results sumEditionResults(List<EditionResults> editionResults) {
