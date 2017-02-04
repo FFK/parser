@@ -34,7 +34,6 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("KATROLINA", "KAROLINA");
 		replacementPartsMap.put("KIWIER", "KIWER");
 		replacementPartsMap.put("KORNACKI", "KORNECKI");
-		replacementPartsMap.put("££UKASZ", "£UKASZ");
 		replacementPartsMap.put("MACIEJ", "MACIEK");
 		replacementPartsMap.put("MAGIELA", "MAGIERA");
 		replacementPartsMap.put("MA£GORZATA", "GOSIA");
@@ -51,7 +50,6 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("TROJNAK", "TROJNAR");
 		replacementPartsMap.put("TYNALIK", "TYRALIK");
 		replacementPartsMap.put("TYRDLIK\\?", "TYRALIK");
-		replacementPartsMap.put("UKASZ", "£UKASZ");
 		replacementPartsMap.put("WALDEMAR", "WALDEK");
 		replacementPartsMap.put("WOJCIECH", "WOJTEK");
 		replacementPartsMap.put("WYCIŒCIK", "WYCIŒLIK");
