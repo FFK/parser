@@ -11,10 +11,12 @@ public final class CompetitorsFactory {
 	private static Map<String, String> replacementPartsMap = new HashMap<>();
 	static {
 		replacementPartsMap.put("AKOWACZ \\?", "AKOWACZ");
+		replacementPartsMap.put("ALEKSNDER", "ALEKSANDER");
 		replacementPartsMap.put("AMANADA", "AMANDA");
 		replacementPartsMap.put("ANASTASIJA", "ANASTASIYA");
 		replacementPartsMap.put("BANDOLERAS", "BANDERAS");
 		replacementPartsMap.put("BART£OMIEJ", "BARTEK");
+		replacementPartsMap.put("BOGUSTOWICZ", "BOGUS£OWICZ");
 		replacementPartsMap.put("DARIUSZ", "DAREK");
 		replacementPartsMap.put("FRANCISZEK", "FRANEK");
 		replacementPartsMap.put("GOSLO", "GORLO");
@@ -39,9 +41,13 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("MARTNA", "MARTYNA");
 		replacementPartsMap.put("MATUSZEK", "MATUSZAK");
 		replacementPartsMap.put("MÊDRZAK", "KOPERWAS");
+		replacementPartsMap.put("MIRZEJEWSKI", "MIERZEJEWSKI");
 		replacementPartsMap.put("MIÊTUS", "MIENTUS");
+		replacementPartsMap.put("PIÊTKOWSKA", "PI¥TKOWSKA");
+		replacementPartsMap.put("PIOTA", "PIOTR");
 		replacementPartsMap.put("RADOS£AW", "RADEK");
 		replacementPartsMap.put("SAS NOWOSIELSKI", "SAS-NOWOSIELSKI");
+		replacementPartsMap.put("SYMON", "SZYMON");
 		replacementPartsMap.put("TROJNAK", "TROJNAR");
 		replacementPartsMap.put("TYNALIK", "TYRALIK");
 		replacementPartsMap.put("TYRDLIK\\?", "TYRALIK");
@@ -58,7 +64,9 @@ public final class CompetitorsFactory {
 	static{
 		renamingMap.put("ADAM S", "ADAM SIEÑKO");
 		renamingMap.put("ARTU WÓJCIK", "ARTUR WÓJCIK");
+		renamingMap.put("MA£ORZATA DOBISZ", "GOSIA DOBISZ");
 		renamingMap.put("JACEK JÓZEF CZECH", "JACEK CZECH");
+		renamingMap.put("JOANNA NIECHWIEDOWICZ", "JOANNA NIECHWIEDOWIC");
 		renamingMap.put("KUBA W", "KUBA WYBIERALSKI");
 		renamingMap.put("RAFA£ PIÊTAK", "DZIK");
 	}
