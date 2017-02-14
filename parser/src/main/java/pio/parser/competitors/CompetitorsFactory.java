@@ -64,7 +64,6 @@ public final class CompetitorsFactory {
 		renamingMap.put("ARTU WÓJCIK", "ARTUR WÓJCIK");
 		renamingMap.put("MA£ORZATA DOBISZ", "GOSIA DOBISZ");
 		renamingMap.put("JACEK JÓZEF CZECH", "JACEK CZECH");
-		renamingMap.put("JOANNA NIECHWIEDOWICZ", "JOANNA NIECHWIEDOWIC");
 		renamingMap.put("KUBA W", "KUBA WYBIERALSKI");
 		renamingMap.put("RAFA£ PIÊTAK", "DZIK");
 	}
