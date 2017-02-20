@@ -2,8 +2,8 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 1	Andrzej Rawski	Antygravity.pl/KW Gliwice	t	t	t	t	t	t	t	t	t	b		b									Lajt	M	9	10
 2	Katarzyna Dymińska	CSC Adventure Academy	t	b	t	t	t		b														Lajt	K	4	6
 3	Wiktoria Dymińska	CSC Adventure Academy	t	t	t	t	t	t	t	t													Lajt	K	8	8
-4	Błażej Bednarek	CSC Adventure Academy	t	t	t	t	t	t	t	t	t	t											Lajt	M	10	10
-5	Bartosz Bednarek	CSC Adventure Academy	t	b	t	t	t	b	b	t													Lajt	M	5	8
+4	Błażej Bodynek	CSC Adventure Academy	t	t	t	t	t	t	t	t	t	t			t								Lajt	M	11	11
+5	Bartosz Bodynek	CSC Adventure Academy	t	b	t	t	t	b	b	t													Lajt	M	5	8
 6	Karol Herlinger	Primaroca	t	t	t	t	t	t	t	t	t	t					t						Lajt	M	11	11
 7	Adam Adamski							t	t	t	t		t		b	t	t						Trudna	M	7	8
 8	Bartek Pająk	CW Transformator		t	t	t	t	t	t	t													Lajt	M	7	7
@@ -63,7 +63,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 62	Sebastian Dudek	jogadlawspinaczy.pl	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t		b	b	b		Weteran	M	15	18
 63	Bartek Patora	KW Gliwice						t	t	t	t	b	t		t		t						Trudna	M	7	8
 64	Kamil Lipiński	CW Transformator	t	t	t	t	t	t	t	t	t		b		t	b	t						Trudna	M	6	8
-65	Maciej Swędzioł	Poziom450	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t			t			Trudna	M	11	10
+65	Maciej Swędzioł	Poziom450	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t			t			Trudna	M	11	11
 66	Radosław Kielar	Bełchatowski KW						t	t	t	t	t	t	t	t	t	t			b			Trudna	M	10	11
 67	Paweł Czornik	CW Transformator	t	t	t	t	t	t	t	b	b	b											Lajt	M	7	10
 68	Piotr Trojnar	Salewa Block	t	t	t	t	t	t	t	t		b											Lajt	M	8	9
@@ -75,7 +75,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 74	Tomasz Szafron		t	t	t	t	t	t	t	t					t		t						Weteran	M	10	10
 75	Michał Kozioł		t	t	t	t	t	t	b	b													Lajt	M	6	8
 76	Dawid Gwóźdź												t	t	t	t	t		t	t	t	b	Pro	M	8	9
-77	Klaudia Kandzia		t	t	t	t	t		t	t		b											Lajt	K	7	8
+77	Klaudia Kandzia	BLO Katowice	t	t	t	t	t		t	t		b											Lajt	K	7	8
 78	Witold Kwapisz	CSC Adventure Academy	t	b	t	t	t	b	b	b													Lajt	M	4	8
 79	Dorian Starczewski	KW Częstochowa	t	t	t	t	t	t	t	t	t	b			b		b				b		Lajt	M	9	11
 80	Wojtek Natanek	SW KW Katowice	t	t	t	t	t	t	t	t	t	b	b		t		b						Lajt	M	9	11
@@ -106,7 +106,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 105	Piotr Ćwiąkała	KW Jastrzębie	t	t	t	t	t	t	t	t		b	b		t		t						Weteran	M	10	12
 106	Zuzia Mientus	Skarpa Bytom	t	t	t	t	t		t				b										Junior	K	6	7
 107	Łukasz Muller	Fair-climb											t	t	t	t	t	t	t	t	t	t	Pro	M	10	10
-108	Hania Piątkowska		t	t	t	t	t		t	t													Weteran	K	7	7
+108	Hanna Piątkowska		t	t	t	t	t		t	t													Weteran	K	7	7
 109	Daria Brylova	KS Korona/Heartbeat/Eb	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t			t	b	b	Trudna	K	11	11
 110	Bandorelas	KW Jastrzębie						t	t	t	t	b			t		t				b		Trudna	M	6	7
 111	Jakub Sarek		t	b	t	t	t	b			b												Lajt	M	4	7
@@ -121,3 +121,4 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 120	Wiktor Olszowski	CW Transformator	t	t	t	t	t	t	t	t	t		b	b	b	b	b						Junior	M	9	14
 121	Jakub Mizerski	BLO Katowice	t	t	t	t	t	t	t	t													Lajt	M	8	8
 122	Tomasz Hansel	KW Katowice	t	t	t	t	t	t	t	t	t												Lajt	M	9	9
+123	Bartosz Szymik	CW Transformator						t	t	t	t	t	t	b	t	b	t						Trudna	M	8	10
