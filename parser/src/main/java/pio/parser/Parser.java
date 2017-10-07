@@ -17,16 +17,17 @@ import pio.parser.results.EditionResults;
 
 public class Parser {
 	
-	public static final Season SEASON = Season.SEASON_16_17;
+	public static final Season SEASON = Season.SEASON_17_18;
+	private static final int EXCLUDED_EDITIONS_NO = 0;
 	
 	private static void calculateScores(Results results) {
 		for (Competitor competitor : results.getPerformancesMapsByCompetitor().keySet()) {
 			int allTops = results.getPerformancesMapsByCompetitor().get(competitor).countTops();
 			int allBonuses = results.getPerformancesMapsByCompetitor().get(competitor).countBonuses();
 			int bestTops = results.getPerformancesMapsByCompetitor().get(competitor)
-					.countBestEditionsTops(results.getEditions().size() - 2);
+					.countBestEditionsTops(results.getEditions().size() - EXCLUDED_EDITIONS_NO);
 			int bestBonuses = results.getPerformancesMapsByCompetitor().get(competitor)
-					.countBestEditionsBonuses(results.getEditions().size() - 2);
+					.countBestEditionsBonuses(results.getEditions().size() - EXCLUDED_EDITIONS_NO);
 			competitor.setScoreAll(new Score(allTops, allBonuses));
 			competitor.setScoreBest(new Score(bestTops, bestBonuses));
 		}
