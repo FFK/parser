@@ -29,11 +29,11 @@ public class ResultWriter {
 		lines.add(rows);
 		lines.addAll(LineReader.getLines(tableFooterFile.toPath()));
 		lines.addAll(LineReader.getLines(bottomContentFile.toPath()));
-		Path file = Paths.get("output/" + competition.name() + ".html");
+		Path file = Paths.get("output/"+ Parser.SEASON + "/" + competition.name() + ".html");
 		try {
 			Files.write(file, lines, Charset.forName("UTF-8"));
 			if (competition == Competition.PRO_MEN) {
-				Files.write(Paths.get("output/Ranking.html"), lines, Charset.forName("UTF-8"));
+				Files.write(Paths.get("output/" + Parser.SEASON + "/Ranking.html"), lines, Charset.forName("UTF-8"));
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

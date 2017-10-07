@@ -4,7 +4,10 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 
+
 import org.apache.commons.io.FilenameUtils;
+
+import pio.parser.Parser;
 
 public class FileReader {
 	
@@ -20,7 +23,7 @@ public class FileReader {
 	}
 	
 	public static File getCurrentDirectory() {
-		return new File(System.getProperty("user.dir") + "\\input");
+		return new File(System.getProperty("user.dir") + "\\input\\" + Parser.SEASON);
 	}
 
 }

@@ -7,6 +7,7 @@ import pio.parser.competitors.Competitor;
 import pio.parser.html.HtmlGenerator;
 import pio.parser.io.ResultWriter;
 import pio.parser.io.ResultsReader;
+import pio.parser.io.Season;
 import pio.parser.model.Performance;
 import pio.parser.model.PerformncesByEdition;
 import pio.parser.model.Results;
@@ -15,6 +16,9 @@ import pio.parser.results.CompetitorAndPerformance;
 import pio.parser.results.EditionResults;
 
 public class Parser {
+	
+	public static final Season SEASON = Season.SEASON_16_17;
+	
 	private static void calculateScores(Results results) {
 		for (Competitor competitor : results.getPerformancesMapsByCompetitor().keySet()) {
 			int allTops = results.getPerformancesMapsByCompetitor().get(competitor).countTops();
