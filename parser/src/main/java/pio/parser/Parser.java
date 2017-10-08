@@ -17,7 +17,7 @@ import pio.parser.results.EditionResults;
 
 public class Parser {
 	
-	public static final Season SEASON = Season.SEASON_16_17;
+	public static final Season SEASON = Season.SEASON_17_18;
 	
 	private static void calculateScores(Results results) {
 		for (Competitor competitor : results.getPerformancesMapsByCompetitor().keySet()) {
