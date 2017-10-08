@@ -110,7 +110,7 @@ public class HtmlGenerator {
 
 			editionNo++;
 		}
-		return tr.write();
+		return tr.write() + "\n";
 	}
 
 	private static String createTopAndBonusesLabel(Score score) {
