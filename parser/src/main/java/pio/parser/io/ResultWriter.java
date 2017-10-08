@@ -17,10 +17,10 @@ public class ResultWriter {
 
 	public static void createResultFile(Competition competition, String rows) {
 		ClassLoader classLoader = Parser.class.getClassLoader();
-		File topContentFile = new File(classLoader.getResource("TopContent.html").getFile());
-		File tableHeaderFile = new File(classLoader.getResource("TableHeader.html").getFile());
-		File tableFooterFile = new File(classLoader.getResource("TableFooter.html").getFile());
-		File bottomContentFile = new File(classLoader.getResource("BottomContent.html").getFile());
+		File topContentFile = new File(classLoader.getResource(Parser.SEASON + "/TopContent.html").getFile());
+		File tableHeaderFile = new File(classLoader.getResource(Parser.SEASON + "/TableHeader.html").getFile());
+		File tableFooterFile = new File(classLoader.getResource(Parser.SEASON + "/TableFooter.html").getFile());
+		File bottomContentFile = new File(classLoader.getResource(Parser.SEASON + "/BottomContent.html").getFile());
 
 		List<String> lines = new ArrayList<>();
 		lines.addAll(LineReader.getLines(topContentFile.toPath()));
