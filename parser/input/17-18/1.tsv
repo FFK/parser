@@ -1,5 +1,5 @@
 L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	TOP	BONUS
-1	MARCIN SZYMKOWSKI	MAMA I TATO	t	t	t	t	t	t	t	t	t	t	t		t		t						Trudna	M	8	8
+1	MARCIN SZYMKOWSKI		t	t	t	t	t	t	t	t	t	t	t		t		t						Trudna	M	8	8
 2	DARIUSZ BĄBA		t	t	t	t	t	t	t	t			t		b		b						Lajt	M	8	8
 3	ALEKSANDER WŁODARCZYK		t	t	t	t	t	t	t	b													Lajt	M	7	8
 4	KINGA KLUSKA	CSC ADVENTURE ACADEMY	t	t	t	t	t	t	t	t		t											Lajt	K	9	9
@@ -10,7 +10,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 9	ADAM BIAŁOŻYT		t	t	t	t	t	t	t	t		t	b										Lajt	M	9	9
 10	GRZEGORZ RAWINIS												t	t	t	t	t	t	t	t	t	b	Pro	M	9	10
 11	SZYMON KOWALCZYK		t	t	t	t	t	t	t	t		t	t		t								Lajt	M	9	9
-12	KRZYSZTOF BIAŁOŻYT	TRAFO	t	t	t	t	t	t	t				t										Weteran	M	8	8
+12	KRZYSZTOF BIAŁOŻYT	CW TRANSFORMATOR	t	t	t	t	t	t	t				t										Weteran	M	8	8
 13	TOMASZ KŁOSEK	CW TRANSFORMATOR											t	t	t	b	t			t			Pro	M	5	6
 14	PIOTR TROJNAR	SALEWA BLOCK	t	t	t	t	t	t	t	t		b											Lajt	M	8	9
 15	ADAM GODZIC		t	t	t	t	t	t	t	t			t		b		b						Lajt	M	8	8
@@ -18,9 +18,9 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 17	DAMIAN GRUDZIEŃ	SALEWA BLOCK	t	t	t	t	t	t	t	t	t	t	t		t	b	t						Trudna	M	8	9
 18	KRYSTIAN KOLESIAK	UKS K-2	t	t	t	b	t	t	t	t			b										Lajt	M	7	8
 19	TOMASZ MAJCHRZAK	KW KRAKÓW	t	t	t	t	t	t	t	t			b		b								Lajt	M	8	8
-20	LEONIA ZAJĄC	PRIMA ROCA BIELSKO-BIAŁA						t	t	t	t	t	t		b								Trudna	K	6	7
-21	SZYMON HOPKOWICZ	MAGNEZJA PO OCZACH	t	t				t		t													Lajt	M	4	4
-22	ROBERT WYKRĘT	PRIMAROCA	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t			t			Weteran	M	16	16
+20	LEONIA ZAJĄC	PRIMAROCA BIELSKO-BIAŁA						t	t	t	t	t	t		b		t						Trudna	K	7	8
+21	SZYMON HOPKOWICZ	MAGNEZJĄ PO OCZACH	t	t				t		t													Lajt	M	4	4
+22	ROBERT WYKRĘT	PRIMAROCA BIELSKO-BIAŁA	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t			t			Weteran	M	16	16
 23	DAWID BERA	UKS K-2	t	t	t	t	t	t	t	t		b	t		t								Lajt	M	8	9
 24	DANIEL LOVAAS	KS KORONA KRAKÓW	t	t	t	t	t	t	t	t	t	t	t		t	b	t	t	t	b			Pro	M	5	7
 25	GOSIA WŁODARCZYK	FANTASTYCZNE WSPINANIE	t	t	t	t	t	t	t	t	b	t	t		b								Junior	K	10	12
@@ -29,7 +29,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 28	WOJCIECH RATAJCZAK	SKARPA BYTOM	t	t	t	t	t	t	t	t	t	t	t	t	b		t			b			Lajt	M	11	11
 29	DOROTA NOWAK	KKT	t	b																			Lajt	K	1	2
 30	ALEXANDRA FILIPEK		t	b	b	b	b	t	t														Lajt	K	3	7
-31	PAWEŁ CZORNIK	TRANSFORMATOR	t	t	t	t	t	t	t	t	t	t	t										Lajt	M	11	11
+31	PAWEŁ CZORNIK	CW TRANSFORMATOR	t	t	t	t	t	t	t	t	t	t	t										Lajt	M	11	11
 32	GRZEGORZ SIEMIENIEC	KW JASTRZĘBIE	t	t	t	t	t	t	t	b	t	t	t		b		b						Weteran	M	10	13
 33	ZENEK ZIOŁKO	KW JASTRZĘBIE	t	t	t	t	t	t	t	t	t	t	t		b		b						Weteran	M	11	13
 34	MACIEK ZIELIŃSKI	SIEMIANOWICE ŚLĄSKIE	t	t	t	t	t	t	t	t	t	t	b										Lajt	M	10	11
@@ -49,7 +49,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 48	MICHAŁ KOZIOŁ		t	t	t	t	t	t	t	t			b		b								Lajt	M	8	8
 49	KACPER MATUSZAK	SALEWA BLOCK	t	t	t	t	t	t	t	t	t	t	t		t		b						Trudna	M	7	8
 50	PAULINA CZECH	SALEWA BLOCK	t	b				b															Lajt	K	1	3
-51	PRZEMYSŁAW MICHNA							t	t	t		t											Pro	M	0	0
+51	PRZEMYSŁAW MICHNA												t	t	t		t						Pro	M	4	4
 52	SPRĘŻYNA		t	t	t	t	t	t	b	t	t	t	t		b		b						Trudna	M	5	8
 53	RADOSŁAW MIZIELSKI	CLIMB TEAM GOGOLIN	t	t	t	b	b	t															Lajt	M	4	6
 54	MICHAŁ WOZAK		t	t	t	t	t	t	t	t		t											Lajt	M	9	9
@@ -62,7 +62,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 61	DAWID GWÓŹDŹ												t		t	t	t		b	b			Pro	M	4	6
 62	KRZYSIEK KONORACKI	OLDEDALEN SKYSSLAG						t	t	b			b										Trudna	M	2	4
 63	ALEKSANDER DOBKOWSKI	SW KW KATOWICE						t	t	t	b	t	t		b								Trudna	M	5	7
-64	ANNA DĄBROWSKA	PRIMAROCA	t	t	b	t	b		t	t													Lajt	K	5	7
+64	ANNA DĄBROWSKA	PRIMAROCA BIELSKO-BIAŁA	t	t	b	t	b		t	t													Lajt	K	5	7
 66	TYMON WALIŃSKI	GTW						t	t	t	t	b	t		t		b						Trudna	M	6	8
 67	ANDREA VACCA	ONSIGHT	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t			Pro	M	8	8
 68	PIOTR MAJKA	KW KATOWICE	t	t	t	t	t	t	t	t	t	t	t		t	b	t						Trudna	M	8	9
@@ -72,7 +72,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 72	KRZYSZTOF MORZYK		t	b				t															Lajt	M	2	3
 73	RAFAŁ CYBA		t	b	t	b	b	t	b		b												Lajt	M	3	8
 74	ŁUKASZ WARCHAŁ												t		t		t				b		Pro	M	3	4
-75	KAROL HERLINGER	PRIMAROCA	t	t	t	t	t	t	t	t	t	t	t										Lajt	M	11	11
+75	KAROL HERLINGER	PRIMAROCA BIELSKO-BIAŁA	t	t	t	t	t	t	t	t	t	t	t										Lajt	M	11	11
 76	MONIKA BŁACHUT	STREFA WSPINANIA	t	t	t	t	t	t	t	t		t	b		b		b						Trudna	K	4	7
 77	PIOTR ROBAKOWSKI	CW CECHOWNIA											t		t	b	t						Pro	M	3	4
 78	IWONA NAWROT		t	t		b				t													Lajt	K	3	4
@@ -108,7 +108,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 107	ANDRZEJ SOLISZ	SCARPA BYTOM	t	t		b			t														Junior	M	3	4
 108	ADAM ADAMSKI							t	t	t	t	t	t		t	t	b						Trudna	M	8	9
 109	ADAM MACH	GRIMPI, MT IDEA, SKARPA BYTOM											t	t	t	t	t	t	t	t	t	t	Pro	M	10	10
-110	FILIP SOKÓŁ	TRANSFORMATOR	t	t	t	t	t	t	t	b	t	t	t		t	b	b						Trudna	M	6	9
+110	FILIP SOKÓŁ	CW TRANSFORMATOR	t	t	t	t	t	t	t	b	t	t	t		t	b	b						Trudna	M	6	9
 111	ARTUR WÓJCIK	KW CZĘSTOCHOWA						t	t	t	t	t	t		t		b						Trudna	M	7	8
 112	WIKTORIA DYMIŃSKA		t	t	t	t	t	t	t	t													Lajt	K	8	8
 113	ANIA KOWALSKA	BLO KATOWICE						t	t	t	t		t			b	t						Trudna	K	6	7
@@ -118,7 +118,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 117	JULIA SEWERYN	RED CLIMB ZONE, NAWSPIN.PL, KW CZĘSTOCHOWA	t	t	t	t	t	t	t	t		b											Lajt	K	8	9
 118	BARTOSZ SZYMIK	CW TRANSFORMATOR	t	t	t	t	t	t	t	t	t	t	t		t		b						Trudna	M	7	8
 119	KRZYSZTOF GIBAS	KW CZĘSTOCHOWA			t	t							t										Trudna	M	1	1
-120	GRZEGORZ GAWLAS	STREFA BOULDERINGU, AMUERTE, KOPALNIA MOCY	t	t	t	t	t	t	b		t	t	t		t		b			b			Weteran	M	10	13
+120	GRZEGORZ GAWLAS	STREFA BOULDERINGU, AMUERTE, KOPALNIA MOCY, redPoint.pl	t	t	t	t	t	t	b		t	t	t		t		b			b			Weteran	M	10	13
 121	ADAM JELONEK							t	b		t	t	t		t	b	b						Trudna	M	5	8
 122	WIESŁAW HERMAN	STREFA WOLNOŚCI CIESZYN	t	t	t	t	t	t	t	t	t	b											Lajt	M	9	10
 123	RAFAŁ KŁOSEK	CW TRANSFORMATOR	t	t		t	t	t	t	t													Lajt	M	7	7
@@ -127,7 +127,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 126	MARCIN WALEWSKI	AVATAR						t	t	t	t	t	t		t		b						Trudna	M	7	8
 127	IGOR NIEBYLSKI	GTW GLIWICE	t	t	t	t	t	t	t				b										Lajt	M	7	7
 128	MARIUSZ SOSNA		t	t	t	t	t	t	t	t													Lajt	M	8	8
-129	WOJTEK SZYLLER	BBBOULDER											t	t	t	t	t		t	b			Pro	M	6	7
+129	WOJTEK SZYLLER	BB BOULDER											t	t	t	t	t		t	b			Pro	M	6	7
 130	AMANDA BARTKOWIAK		t	t	b	t	b	t	t	t	b				b								Lajt	K	6	9
 131	SEWERYN ŚMIEJKA		t	t	t	t	t	t	b	t		b	b		b								Trudna	M	2	6
 132	MARCIN KURDEK	KKT	t	t	t	t	t	t	t	t													Lajt	M	8	8
@@ -156,7 +156,7 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 155	SZYMON NOWAKOWSKI	SALEWA BLOCK	t	t	t	t	t	t	t	t	t	t	t		t	b	t						Trudna	M	8	9
 156	PAWEŁ TRZASKA												t		t		t	b					Pro	M	3	4
 157	ŁUKASZ NIESTRÓJ	CZĘSTOCHOWA	t	t	t	t	t	t	t	b													Lajt	M	7	8
-158	PIOTR KANIA	PRIMAROCA	t	t	t	t	t	t	t	t	b	t											Lajt	M	9	10
+158	PIOTR KANIA	PRIMAROCA BIELSKO-BIAŁA	t	t	t	t	t	t	t	t	b	t											Lajt	M	9	10
 159	JAKUB JARCZAK		t	t	t		t	t	t	t													Lajt	M	7	7
 160	MILENA CIECHANOWSKA	GTW GLIWICE	t	t		t			t	t													Junior	K	5	5
 161	MARTYNA CIECHANOWSKA	GTW GLIWICE	t	t	t	t	t		t	t					b								Junior	K	7	8
@@ -177,11 +177,12 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 176	BASIA TREPKA	POZIOM 450	t	t	b	t			t	t													Lajt	K	5	6
 177	ADAM JELONEK							t	b		t	t	t		t	b	b						Trudna	M	5	8
 178	BARTOSZ ORAWIEC	SKARPA BYTOM	t	t		b			t						b								Junior	M	3	5
-179	Witold Ł.		t	t	t	t	t	t	t	t	b		b										Lajt	M	8	9
-180	Maria Dudek	KRAKÓW NETENT	t	t		t	t	t	t	t													Lajt	K	7	7
-181	Wojtek Drozdowski		t	t	t	t	t	t	t	t													Lajt	M	8	8
-182	Maria J.	KS KORONA KRAKÓW						t	b	t	t	t	t	b	t		b						Trudna	K	6	9
-183	Michał Salawa	KS KORONA KRAKÓW											t	t	t	t	t		t	t	t	b	Pro	M	8	9
-184	Kinga Mundała	CW TRANSFORMATOR, AGRESIVA						t	t	t	t	t	t		b		t						Trudna	K	7	8
-185	Matylda Malec	STREFA WSPINANIA, KW KRAKÓW					t	t	t	t	b	t	t		b		t						Trudna	K	6	8
-186	Dawid C.	CSC ADVENTURE ACADEMY	t	t				t	t	t			b										Lajt	M	5	5
+179	WITOLD Ł.		t	t	t	t	t	t	t	t	b		b										Lajt	M	8	9
+180	MARIA DUDEK	KRAKÓW NETENT	t	t		t	t	t	t	t													Lajt	K	7	7
+181	WOJTEK DROZDOWSKI		t	t	t	t	t	t	t	t													Lajt	M	8	8
+182	MARIA J.	KS KORONA KRAKÓW						t	b	t	t	t	t	b	t		b						Trudna	K	6	9
+183	MICHAŁ SALAWA	KS KORONA KRAKÓW											t	t	t	t	t		t	t	t	b	Pro	M	8	9
+184	KINGA MUNDAŁA	CW TRANSFORMATOR, AGRESIVA						t	t	t	t	t	t		b		t						Trudna	K	7	8
+185	MATYLDA MALEC	STREFA WSPINANIA, KW KRAKÓW					t	t	t	t	b	t	t		b		t						Trudna	K	6	8
+186	DAWID C.	CSC ADVENTURE ACADEMY	t	t				t	t	t			b										Lajt	M	5	5
+187	SEBASTIAN MARCHEWKA	KW CZĘSTOCHOWA	t	t	t	t	t	t	b	t	t	t	t		b		b						Weteran	M	10	13																			
