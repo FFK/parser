@@ -93,19 +93,19 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 92	MAGDA KURZEWA	PRIMAROCA BIELSKO-BIAŁA	t	t	t	t	b	t	t	t													Lajt	K	7	8
 93	ŁUKASZ MRÓZ		t	t	t	t	t	t	t	t			b		t		b						Lajt	M	8	8
 94	KONRAD AKOWACZ	KS KORONA KRAKÓW											t	t	t	t	t		t	b			Pro	M	6	7
-95	NATALIA BETLEJA	SCARPA BYTOM	b																				Lajt	K	0	1
+95	NATALIA BETLEJA	SKARPA BYTOM	b																				Lajt	K	0	1
 96	DOMINIKA BRYŁA	KW KIELCE						t	t	t	t	t	t		b		t						Trudna	K	7	8
 97	MAREK BETLEJA		t	t	t	t	t	t	t	t	t	t	t		b								Weteran	M	11	12
 98	BARBARA SALWIŃSKA							t	t	t		b	t		b		b						Trudna	K	4	7
 99	TOMASZ WIATROWSKI							t	t	t		t											Junior	M	4	4
 100	MARLENA ABRAM	SW KW KATOWICE						t	t	t	b	b	t		b		t						Trudna	K	5	8
 101	SZYMON FATYGA	CSC ADVENTURE ACADEMY	t	b		t	b		b														Junior	M	2	5
-102	ZUZA MIENTUS	SCARPA BYTOM	t	t	t	t	t	t	t	t	b	t			b								Junior	K	9	11
+102	ZUZA MIENTUS	SKARPA BYTOM	t	t	t	t	t	t	t	t	b	t			b								Junior	K	9	11
 103	KAROL PIECHOTA	CW TRANSFORMATOR						t	t				b										Trudna	M	2	3
 104	KAROLINA BOCZKOWSKA	CW TOP KW WARSZAWA						t	t						b								Trudna	K	2	3
 105	GRZEGORZ SŁAWIŃSKI	PRIMAROCA BIELSKO-BIAŁA						t	t	t	t	t	t		t		b						Trudna	M	7	8
 106	JAKUB RYGOŁ		t	t	t	b		t	t						b								Junior	M	5	7
-107	ANDRZEJ SOLISZ	SCARPA BYTOM	t	t		b			t														Junior	M	3	4
+107	ANDRZEJ SOLISZ	SKARPA BYTOM	t	t		b			t														Junior	M	3	4
 108	ADAM ADAMSKI							t	t	t	t	t	t		t	t	b						Trudna	M	8	9
 109	ADAM MACH	GRIMPI, MT IDEA, SKARPA BYTOM											t	t	t	t	t	t	t	t	t	t	Pro	M	10	10
 110	FILIP SOKÓŁ	CW TRANSFORMATOR	t	t	t	t	t	t	t	b	t	t	t		t	b	b						Trudna	M	6	9
@@ -185,4 +185,5 @@ L.P		KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	T
 184	KINGA MUNDAŁA	CW TRANSFORMATOR, AGRESIVA						t	t	t	t	t	t		b		t						Trudna	K	7	8
 185	MATYLDA MALEC	STREFA WSPINANIA, KW KRAKÓW					t	t	t	t	b	t	t		b		t						Trudna	K	6	8
 186	DAWID URBAŃSKI	CSC ADVENTURE ACADEMY	t	t			t	t	t	t			b										Lajt	M	6	6
-187	SEBASTIAN MARCHEWKA	KW CZĘSTOCHOWA	t	t	t	t	t	t	b	t	t	t	t		b		b						Weteran	M	10	13										
+187	SEBASTIAN MARCHEWKA	KW CZĘSTOCHOWA	t	t	t	t	t	t	b	t	t	t	t		b		b						Weteran	M	10	13
+188	AGNIESZKA MICHALAK	KW CZĘSTOCHOWA	t	t	t	t	t	t	t	b	b	t			b								Trudna	K	3	6		
