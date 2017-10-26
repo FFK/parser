@@ -55,13 +55,13 @@ L.P	IMIE I NAZWISKO	KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19
 54	AREK ERM	X TEAM ORZESZE	t	t	t	t	t	t	t	t	b	t	t			t	t						Weteran	M	12	13
 55	AGATA ERM	X TEAM ORZESZE																						K	0	0
 56	MACIEJ ZIELIŃSKI	AMOK BASTARDS	t	t	t	t	t	t	t	t	b	b											Lajt	M	8	10
-57	ŁUKASZ PIESIK	KZ JAWORZNO	t	t	t	t	t	t	t				b			b								M	0	0
-58	DAWID BERA	KZ  JAWORZNO		t	t	t	t	t	t	t	t	t	t		b	b	t						Lajt	M	9	9
+57	ŁUKASZ PIESIK	KZ JAWORZNO	t	t	t	t	t	t	t	t	t	t					t						Lajt	M	11	11
+58	DAWID BERA	KZ  JAWORZNO	t	t	t	t	t	t	t	t	t	t	t		b	b	t						Lajt	M	11	11
 59	ANNA DĄBROWSKA	PRIMAROCA		t	t	t	t		t	b		b											Lajt	K	5	7
 60	KRZYSZTOF BIAŁOŻYT	TRAFO	t	t	t	t	t	t	b	t	t	t					t						Weteran	M	10	11
-61	BRUNO WAŁASZEWSKI 	AVATAR						t	t	t	t	t	t	t	t	t	t		t					M	0	0
+61	BRUNO WAŁASZEWSKI 	AVATAR						t	t	t	t	t	t	t	t	t	t		t				Trudna	M	11	10
 62	ADAM BIAŁOŻYT		t	t	t	t	t	t	t	t	t	t					t						Lajt	M	11	11
-63	MARIA DUDEK	KRAKÓW NETENT		t	t	t	t		t	t		b											Lajt	M	6	7
+63	MARIA DUDEK	KRAKÓW NETENT		t	t	t	t		t	t		b											Lajt	K	6	7
 64	KAROL HERLINGER	PRIMAROCA	t	t	t	t	t	t	t	t	t	t					b						Lajt	M	10	11
 66	TOMASZ MAJCHRZAK	KW KRAKÓW	t	t	t	t	t	t	t	t	t	t											Lajt	M	10	10
 67	JUSTYNA SPYRKA	KW KATOWICE	b	t	t	t	t		t	b		t											Lajt	K	6	8
@@ -79,15 +79,15 @@ L.P	IMIE I NAZWISKO	KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19
 79	FILIP SOKÓŁ	CW TRANSFORMATOR	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	b				b	Trudna	M	10	11
 80	ZENEK ZIOŁKO	KW JASTRZĘBIE	t	t	t	t	t	t	t	t		t		b	b	t	t						Weteran	M	11	13
 81	TOMASZ KŁOSEK	CW TRANSFORMATOR											t	t	b	t	t	b	t			b	Pro	M	5	8
-81	VADYM LESIV			t	t	t	t	t	t	b	b	b	b											M	0	0
-82	ILLIA  GANNYTSLYI			t	t	t	b	t	t	b	b	b			b										0	0
+81	VADYM LESIV			t	t	t	t	t	t	b	b	b	b										Lajt	M	6	9
+82	ILLIA  GANNYTSLYI			t	t	t	b	t	t	b	b	b			b								Lajt	M	5	9
 83	RAFAŁ CIOŁEK		b	t	t	t	t	t	b														Lajt	M	5	7
 84	MARIUSZ SOSNA		t	t	t	t	t	t	t	t	b	t											Lajt	M	9	10
 85	KAROLINA WIATROWSKA			t	t	t	b																Lajt	K	3	4
-86	TOMASZ WIATROWSKI							t	t	t		t												M	0	0
+86	TOMASZ WIATROWSKI							t	t	t		t											Trudna	M	4	4
 87	MAREK BETLEJA		t	t	t	t	t	t	t	t	t	t	t		b		t						Weteran	M	12	13
 88	BARTOSZ SZYMIK	CW TRANSFORMATOR	t	t	t	t	t	t	t	t	t	t	t	t	b	t	t						Trudna	M	9	10
-89	PAWEŁ WRONA	CCD	t	t	t	t	t	t	t	t	t	t	t	t			t						Weteran	M	13	13
+89	PAWEŁ WRONA	CCD	t	t	t	t	t	t	t	t	t	t	t	t	b		t						Weteran	M	13	14
 90	SZYMON NOWAKOWSKI	SALEWA BLOCK						t	t	t	t	t	t	t	t	t	t		t				Trudna	M	11	10
 91	AMANDA SWAT	SALEWA BLOCK							t	t		t											Trudna	K	3	3
 92	ALEKSANDER OLSZOK	SALEWA BLOCK											t	t	t	t	t	b	t	b			Pro	M	6	8
@@ -122,9 +122,9 @@ L.P	IMIE I NAZWISKO	KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19
 121	BARTEK CHMURA	TRAFO						t	t	t	b	t	t	t	t	t	t		t				Trudna	M	9	10
 122	MARCIN KURDEK	KKT	t	t	t	t	t	t	t	t		t											Lajt	M	9	9
 123	KRZYSZTOF ROZA	MASAKRA						t	t	t	t	t	t	t	t	t	t	b					Trudna	M	10	11
-124	ŁUKASZ LYSOK	MASAKRA											t	t	b	b	t		t				Pro	M	4	6
+124	ŁUKASZ LIPOK	MASAKRA											t	t	b	b	t		t				Pro	M	4	6
 125	EMIL	KOLIBA PROGRES						t	t	t		t	t			t	t						Trudna	M	7	7
-126	ALEKSANDRA FILIPEK		b	t	t	t	t																Lajt	M	4	5
+126	ALEKSANDRA FILIPEK		b	t	t	t	t																Lajt	K	4	5
 127	RADOSŁAW JAROSZEK		t	t	t	t	t	t	t	t	t	t	t	t	b	t	t		t				Trudna	M	9	10
 128	GRZEGORZ ,,BUŁA" GOŁOWCZYK	KW KATOWICE	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	Pro	M	10	10
 129	ANNA GORLELSKA	KKT		b	b																		Lajt	K	0	2
@@ -133,5 +133,5 @@ L.P	IMIE I NAZWISKO	KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19
 132	PAWEŁ SZRAMOWSKI	CW TRANSFORMATOR	b	t	t	t	t	t	t	t	b	t											Lajt	M	8	10
 133	KRZYSZTOF KUCHARCZYK	TKTJ														b	t						Pro	M	1	2
 134	PAWEŁ DYKIEL	KKT	t	t	t	t	t	t	t	t	t	b											Lajt	M	9	10
-135	PAWEŁ WIĘCŁAW	CW TRANSFORMATOR	b	t	t	t		b			b						t							M	0	0
+135	PAWEŁ WIĘCŁAW	CW TRANSFORMATOR	b	t	t	t		b			b						t						Lajt	M	3	6
 136	PAWEŁ KOS	KW KATOWICE	t	t	t	t	t	t	t	t	t	b											Lajt	M	9	10
