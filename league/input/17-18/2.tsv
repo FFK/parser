@@ -1,0 +1,137 @@
+L.P	IMIE I NAZWISKO	KLUB/SPONSOR	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	GRUPA	M/K	TOP	BONUS
+1	WIKTORIA DYMIŃSKA			t	t	t	t	t	t	t	b	t											Lajt	K	8	9
+2	KATARZYNA DYMIŃSKA			t	b	b	t			b													Lajt	K	2	5
+3	JAKUB MIZERSKI		t	t	t	t	t	t	t	t		b											Lajt	M	8	9
+4	DAREK BOGUSŁOWICZ		t	t	t	t	t	t	t	t		t											Weteran	M	8	8
+5	GRZEGORZ GAWLAS		t	t	t	t	t	t	t	t	t	t	t	t	t		t						Weteran	M	14	14
+6	RAFAŁ KŁOSEK			t	t	t	t	t	t	t	b	b											Lajt	M	7	9
+7	PIOTR MAJKA	KW KATOWICE	t	t	t	t	t	t	t	t	t	t	t	t	b	b	t						Trudna	M	8	10
+8	PAWEŁ PIASKOWY	SALEWA BLOCK	t	t	t	t	t	t	t	t	t	t					t						Lajt	M	11	11
+9	PIOTR ZGADZAJ	SKW GLIWICE	t	t	t	t	t	t	t	t	t	t	t			b	t						Weteran	M	12	13
+10	MIREK MAZURKIEWICZ	SALEWA BLOCK	b	t	t	t	t	t	t	t	b	t		b		b	t						Weteran	M	9	13
+11	ALEXEY ZAGRODNIY			t	t	t	t	t	t	t	t	b											Lajt	M	8	9
+12	DOMINIKA BRYŁA	KW KIELCE							t	t		t	t		b	b	t						Trudna	K	5	7
+13	DOMINIKA SOŁTYS	KW KIELCE						t	t	t	t	t	t		t	b	t						Trudna	K	8	9
+14	TOMASZ HANSEL	SW KW KATOWICE	t	t	t	t	t	t	t	t	b	t											Lajt	M	9	10
+15	HANNA PIĄTKOWSKA		t	t	t	t	t	t	t	t		t											Weteran	K	9	9
+16	TYMOTEUSZ KOSMAN	PRIMAROCA	t	t	t	t	t	t	t	t		t	b										Junior	M	9	10
+17	PAWEŁ CZORNIK	CW TRANSFORMATOR	t	t	t	t	t	t	t	t	b	t											Lajt	M	9	10
+18	MARCIN WALEWSKI	AVATAR						t	t	t	t	t	t	t	b	t	t						Trudna	M	9	10
+19	ŁUKASZ WARCHAŁ												t	t	b		t	b	t		b	b	Pro	M	4	8
+20	MAŁGORZATA WŁODARCZYK	FANTASTYCZNE WSPINANIE	t	t	t	t	t		t	t		t											Junior	K	8	8
+21	ALEKSANDER WŁODARCZYK		b	t	t	t	t	t	t	b		t											Lajt	M	7	9
+22	OLEK DZIURZYŃSKI							t	t	t		t	t	b	b		t						Trudna	M	6	8
+23	KRZYSZTOF HERTLING		t	t	t	t	t	t	t	t		t	t	t			t						Trudna	M	7	7
+24	WERONIKA RÓŻAŃSKA	SKKW KATOWICE	b	t	t	t	t		t	t		t											Lajt	K	7	8
+25	PIOTR TROJNAR	SALEWA BLOCK	t	t	t	t	t	t	t	t	t	t											Lajt	M	10	10
+26	PAWEŁ NOWAK			t	t			t		b													Lajt	M	3	4
+27	KAMIL LIPIŃSKI	BLO KATOWICE	t	t	t	t	t	t	t	t	t	t	t	t	b	t	t						Trudna	M	9	10
+28	MICHAŁ TĘCZA		b	t	t	t	b	t	t	t	b												Lajt	M	6	9
+29	MICHAŁ BESLER	SALEWA BLOCK	b	t	t	t	t	t	t	t	b	t	b										Lajt	M	8	11
+30	ŁUKASZ KRYBUS							t	t	t	t	t	t	t	b	t	t						Trudna	M	9	10
+31	MARTYNA ŚMIŁOWSKA			t	t	t	t	t															Lajt	K	5	5
+32	PAULINA JURECZKO			t	t	t	t		b	b	b	b											Lajt	K	4	8
+33	ROMAN KHARYTONOV		t	t	t	t	t	t	t	t	t	t	t	t	b	t	t		t				Trudna	M	9	10
+34	RADOSŁAW KIELAR	BEŁCHATOWSKI KW	t	t	t	t	t	t	t	t	t	t	t	t	b	t	t						Trudna	M	9	10
+35	OLGA LOTKA	SALEWA BLOCK		t	t	t	t			b		b											Lajt	K	4	6
+36	WOJCIECH DROZDOWSKI	AZS AWF KATOWICE	t	t	t	t	t	t	t	t	t	t		t		t							Lajt	M	11	11
+37	KRZYSZTOF MORZYK			t	t			t															Lajt	M	3	3
+38	GABRIEL FRĄTCZAK	MAGNEZJĄ PO OCZACH		t	t	t	b	t		b													Lajt	M	4	6
+39	MACIEK BOGUCKI	KW GLIWICE	b	b	t	t	t	t	t	t		t					t						Weteran	M	8	10
+40	SZYMON HOPKOWICZ	MAGNEZJĄ PO OCZACH		t	t	b	t	t	b	b													Lajt	M	4	7
+41	EWA MIEDZIŃSKA	MAGNEZJĄ PO OCZACH		t	t	t	t					b											Lajt	K	4	5
+42	KRZYSZTOF LUKOSZEK	SALEWA BLOCK	b	t	t	t	t	t	t	t	b	t											Lajt	M	8	10
+43	DAMIAN GRUDZIEŃ	SALEWA BLOCK	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t		t			b	Trudna	M	11	11
+44	DOROTA NOWAK	KKT	b	b																			Lajt	K	0	2
+45	ADAM GODZIC		t	t	t	t	t	t	t	t	t	t											Lajt	M	10	10
+46	KRZYSZTOF SAS-NOWOSIELSKI	AZS AWF KATOWICE, EVOLV	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t				b	Weteran	M	16	17
+47	GRZEGORZ SAS-NOWOSIELSKI			b	b	b																	Junior	M	0	3
+48	KINGA MUNDAŁA	CW TRANSFORMATOR, AGRESIVA						t	t	t		t	b		b	b	t						Trudna	K	5	8
+49	ZBYSZEK BARDEL												t	t	t	t	t	t	t	t	t	t	Pro	M	10	10
+50	MATEUSZ KAPAŁA	SALEWA BLOCK		t	t	t	t	t	t	b	b	b											Lajt	M	6	9
+51	MACIEJ CZARNECKI		b	t	t	t	t	t	t	b		t											Lajt	M	7	9
+52	TOMASZ STĘPIEŃ	SALEWA BLOCK		t	t	t	t	t	t		b	b											Lajt	M	6	8
+53	ADRIAN KURO		t	t	t	t	t	t	t	t	b	t											Lajt	M	9	10
+54	AREK ERM	X TEAM ORZESZE	t	t	t	t	t	t	t	t	b	t	t			t	t						Weteran	M	12	13
+55	AGATA ERM	X TEAM ORZESZE																						K	0	0
+56	MACIEJ ZIELIŃSKI	AMOK BASTARDS	t	t	t	t	t	t	t	t	b	b											Lajt	M	8	10
+57	ŁUKASZ PIESIK	KZ JAWORZNO	t	t	t	t	t	t	t	t	t	t					t						Lajt	M	11	11
+58	DAWID BERA	KZ  JAWORZNO	t	t	t	t	t	t	t	t	t	t	t		b	b	t						Lajt	M	11	11
+59	ANNA DĄBROWSKA	PRIMAROCA		t	t	t	t		t	b		b											Lajt	K	5	7
+60	KRZYSZTOF BIAŁOŻYT	TRAFO	t	t	t	t	t	t	b	t	t	t					t						Weteran	M	10	11
+61	BRUNO WAŁASZEWSKI 	AVATAR						t	t	t	t	t	t	t	t	t	t		t				Trudna	M	11	10
+62	ADAM BIAŁOŻYT		t	t	t	t	t	t	t	t	t	t					t						Lajt	M	11	11
+63	MARIA DUDEK	KRAKÓW NETENT		t	t	t	t		t	t		b											Lajt	K	6	7
+64	KAROL HERLINGER	PRIMAROCA	t	t	t	t	t	t	t	t	t	t					b						Lajt	M	10	11
+66	TOMASZ MAJCHRZAK	KW KRAKÓW	t	t	t	t	t	t	t	t	t	t											Lajt	M	10	10
+67	JUSTYNA SPYRKA	KW KATOWICE	b	t	t	t	t		t	b		t											Lajt	K	6	8
+68	MARLENA ABRAM	KW KATOWICE						t	t	t		t	t		b	b	t						Trudna	K	6	8
+69	WOJTEK NATANEK	SW KW KATOWICE	t	t	t	t	t	t	t	t	t	t	b			b	t						Lajt	M	11	11
+70	KRYSTIAN KOLESIAK	KZ JAWORZNO	b	t	t	t	t	t	t	b	t	b											Lajt	M	7	10
+71	WITOLD KWAPISZ	CSC ADVENTURE ACADEMY		t	t	t	t	t		b	t												Lajt	M	6	7
+72	KINGA KLUSKA	CSC ADVENTURE ACADEMY	t	t	t	t	t	t	t	t	t	t					t						Lajt	K	11	11
+73	JULIA SEWERYN	KW CZĘSTOCHOWA		t	t	t	t	t	t	t	t	t	b		b	b	t						Lajt	K	9	9
+74	KAROLINA JUSZCZYK	PROGRES	b	t	t	t	t	t	t	b		b											Lajt	K	6	9
+75	ŁUKASZ MRÓZ		b	t	t	t	t	t	t	t	b	t											Lajt	M	8	10
+76	KRZYSZTOF GIBAS	KW CZĘSTOCHOWA		t	t	t		t								b	t	b					Trudna	M	2	3
+77	KAMIL PALA	KW CZĘSTOCHOWA	t	t	t	t	t	t	t	b	b	b											Lajt	M	7	10
+78	SEBASTIAN MARCHEWKA	KW CZĘSTOCHOWA	b	t	t	t	t	t	t	t	b	t	b	b	b	b						b	Weteran	M	8	15
+79	FILIP SOKÓŁ	CW TRANSFORMATOR	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	b				b	Trudna	M	10	11
+80	ZENEK ZIOŁKO	KW JASTRZĘBIE	t	t	t	t	t	t	t	t		t		b	b	t	t						Weteran	M	11	13
+81	TOMASZ KŁOSEK	CW TRANSFORMATOR											t	t	b	t	t	b	t			b	Pro	M	5	8
+81	VADYM LESIV			t	t	t	t	t	t	b	b	b	b										Lajt	M	6	9
+82	ILLIA  GANNYTSLYI			t	t	t	b	t	t	b	b	b			b								Lajt	M	5	9
+83	RAFAŁ CIOŁEK		b	t	t	t	t	t	b														Lajt	M	5	7
+84	MARIUSZ SOSNA		t	t	t	t	t	t	t	t	b	t											Lajt	M	9	10
+85	KAROLINA WIATROWSKA			t	t	t	b																Lajt	K	3	4
+86	TOMASZ WIATROWSKI							t	t	t		t											Trudna	M	4	4
+87	MAREK BETLEJA		t	t	t	t	t	t	t	t	t	t	t		b		t						Weteran	M	12	13
+88	BARTOSZ SZYMIK	CW TRANSFORMATOR	t	t	t	t	t	t	t	t	t	t	t	t	b	t	t						Trudna	M	9	10
+89	PAWEŁ WRONA	CCD	t	t	t	t	t	t	t	t	t	t	t	t	b		t						Weteran	M	13	14
+90	SZYMON NOWAKOWSKI	SALEWA BLOCK						t	t	t	t	t	t	t	t	t	t		t				Trudna	M	11	10
+91	AMANDA SWAT	SALEWA BLOCK							t	t		t											Trudna	K	3	3
+92	ALEKSANDER OLSZOK	SALEWA BLOCK											t	t	t	t	t	b	t	b			Pro	M	6	8
+93	WERONIKA ROTKO	UKS-K2	t	t	t	t	t		t	t		b											Junior	K	7	8
+94	MACIEJ BRĘDA	KKT	t	t	t	t	t	t	t	t		b											Lajt	M	8	9
+95	BIANKA JANECKA							t	t	t	t	t	t		t	b	t						Trudna	K	8	9
+96	OLGA WEBER	KS KORONA						t	t	t	t	t	t		b	b	t						Trudna	K	7	9
+97	PAULINA CZECH			b	t	b	t			b		b											Lajt	K	2	6
+98	ANIA KOWALSKA							t	t	t	b	t	t		t	b	t						Trudna	K	7	9
+99	ROMAN BATSENKO	KS KORONA KRAKÓW											t	t	t	t	t	t	t	t	t	t	Pro	M	10	10
+100	ZOFIA LORYS							t	t	t		t	t		b								Trudna	K	5	6
+101	KAJTEK KOPERWAS												t	t	t	t	t	t	t	t	b	b	Pro	M	8	10
+102	KAJTEK PAWELEC	E-CLIMBING-SHOE											t	t	t	t	t	t	t	t	t	t	Pro	M	10	10
+103	MARTA KIWER								t	t		t	t		t		t						Trudna	K	6	6
+104	ASIA KOPERWAS							b	t	t	t	t	t		t	b	t						Trudna	K	7	9
+105	ADAM BUDZIŃSKI	FANTASTYCZNE WSPINANIE		t	t	t	t	t	t	t		t					t						Lajt	M	8	8
+106	OLGA KOSEK	KW ZAKOPANE / BRUBECK TEAM						t	t	t	t	t			b	b	t						Trudna	K	6	8
+107	JAKUB KWAPISZ		b	t	t	t	t	t	t	t		t											Lajt	M	8	9
+108	ADRIAN ŁAPAJ		t	t	t	t	t	t	t	t	t	t	t										Lajt	M	11	11
+109	DORIAN STARCZEWSKI	KW CZĘSTOCHOWA	t	t	t	t	t	t	t	t		b											Lajt	M	8	9
+110	ŁUKASZ MULLER	FAIR-CLIMB  KW LUBLIN	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	Weteran	M	20	20
+111	ŁUKASZ NIESTRÓJ	KW CZĘSTOCHOWA	t	t	t	t	t	t	t	t	t	t											Lajt	M	10	10
+112	ADRIAN CHROBAK	POZIOM 450										t	t	t	t	t	t	t	t		b	b	Pro	M	7	9
+113	MAREK MACIĄŻEK	CW TRANSFORMATOR	b	t	t	t	t		t	b													Weteran	M	5	7
+114	ZUZANNA MIENTUS	SKARPA BYTOM	t	t	t	t	t		t	t		t	t										Junior	K	9	9
+115	DANIEL LOVAAS	KS KORONA KRAKÓW	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	b	t	b	b	b	Pro	M	6	10
+116	CYPRIAN PANGOWSKI	POZIOM 450		t	t	t	t	t				b											Lajt	M	5	6
+117	MONIKA SZUMAŃSKA							t	t	t		t			b		t						Trudna	K	5	6
+118	ANDREA VACCA	ONSIGHT		t	t	t		t	t		t	t	t	t	t	b	t	t	t	t	t	b	Pro	M	8	10
+119	BASIA TREPKA	POZIOM 450	b	t	t	t	t		t														Lajt	K	5	6
+120	PRZEMYSŁAW MICHNA												t	t	t	t	t		t			b	Pro	M	6	7
+121	BARTEK CHMURA	TRAFO						t	t	t	b	t	t	t	t	t	t		t				Trudna	M	9	10
+122	MARCIN KURDEK	KKT	t	t	t	t	t	t	t	t		t											Lajt	M	9	9
+123	KRZYSZTOF ROZA	MASAKRA						t	t	t	t	t	t	t	t	t	t	b					Trudna	M	10	11
+124	ŁUKASZ LIPOK	MASAKRA											t	t	b	b	t		t				Pro	M	4	6
+125	EMIL	KOLIBA PROGRES						t	t	t		t	t			t	t						Trudna	M	7	7
+126	ALEKSANDRA FILIPEK		b	t	t	t	t																Lajt	K	4	5
+127	RADOSŁAW JAROSZEK		t	t	t	t	t	t	t	t	t	t	t	t	b	t	t		t				Trudna	M	9	10
+128	GRZEGORZ ,,BUŁA" GOŁOWCZYK	KW KATOWICE	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	t	Pro	M	10	10
+129	ANNA GORLELSKA	KKT		b	b																		Lajt	K	0	2
+130	JAKUB JARCZAK			t	t	t	b	t															Lajt	M	4	5
+131	MARZENA BANASZEWSKA	POZIOM 450		t	t	b	b																Lajt	K	2	4
+132	PAWEŁ SZRAMOWSKI	CW TRANSFORMATOR	b	t	t	t	t	t	t	t	b	t											Lajt	M	8	10
+133	KRZYSZTOF KUCHARCZYK	TKTJ														b	t						Pro	M	1	2
+134	PAWEŁ DYKIEL	KKT	t	t	t	t	t	t	t	t	t	b											Lajt	M	9	10
+135	PAWEŁ WIĘCŁAW	CW TRANSFORMATOR	b	t	t	t		b			b						t						Lajt	M	3	6
+136	PAWEŁ KOS	KW KATOWICE	t	t	t	t	t	t	t	t	t	b											Lajt	M	9	10
