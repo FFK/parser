@@ -5,7 +5,6 @@ import java.util.Map;
 
 import org.springframework.util.StringUtils;
 
-
 public final class CompetitorsFactory {
 
 	private static Map<String, Competitor> competitors = new HashMap<>();
@@ -16,16 +15,16 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("AMANADA", "AMANDA");
 		replacementPartsMap.put("ANASTASIJA", "ANASTASIYA");
 		replacementPartsMap.put("BANDOLERAS", "BANDERAS");
-		replacementPartsMap.put("BART�OMIEJ", "BARTEK");
-		replacementPartsMap.put("BOGUSTOWICZ", "BOGUS�OWICZ");
+		replacementPartsMap.put("BARTŁOMIEJ", "BARTEK");
+		replacementPartsMap.put("BOGUSTOWICZ", "BOGUSŁOWICZ");
 		replacementPartsMap.put("DARIUSZ", "DAREK");
 		replacementPartsMap.put("FRANCISZEK", "FRANEK");
 		replacementPartsMap.put("GOSLO", "GORLO");
-		replacementPartsMap.put("GRZEG�RZ", "GRZEGORZ");
-		replacementPartsMap.put("GRZE�", "GRZEGORZ");
-		replacementPartsMap.put("GWӯD�", "GWӏD�");
-		replacementPartsMap.put("GWӯD�", "GWӏD�");
-		replacementPartsMap.put("GWI�D�", "GWӏD�");
+		replacementPartsMap.put("GRZEGÓRZ", "GRZEGORZ");
+		replacementPartsMap.put("GRZEŚ", "GRZEGORZ");
+		replacementPartsMap.put("GWÓŻDŹ", "GWÓŹDŹ");
+		replacementPartsMap.put("GWÓŻDŻ", "GWÓŹDŹ");
+		replacementPartsMap.put("GWIŻDŻ", "GWÓŹDŹ");
 		replacementPartsMap.put("HAJNUCZEK", "HAJDUCZEK");
 		replacementPartsMap.put("HURTLING", "HERTLIG");
 		replacementPartsMap.put("IRENEUSZ", "IREK");
@@ -37,15 +36,15 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("KORNACKI", "KORNECKI");
 		replacementPartsMap.put("MACIEJ", "MACIEK");
 		replacementPartsMap.put("MAGIELA", "MAGIERA");
-		replacementPartsMap.put("MA�GORZATA", "GOSIA");
+		replacementPartsMap.put("MAŁGORZATA", "GOSIA");
 		replacementPartsMap.put("MARTNA", "MARTYNA");
 		replacementPartsMap.put("MATUSZEK", "MATUSZAK");
-		replacementPartsMap.put("M�DRZAK", "KOPERWAS");
+		replacementPartsMap.put("MĘDRZAK", "KOPERWAS");
 		replacementPartsMap.put("MIRZEJEWSKI", "MIERZEJEWSKI");
-		replacementPartsMap.put("MI�TUS", "MIENTUS");
-		replacementPartsMap.put("PI�TKOWSKA", "PI�TKOWSKA");
+		replacementPartsMap.put("MIĘTUS", "MIENTUS");
+		replacementPartsMap.put("PIĘTKOWSKA", "PIĄTKOWSKA");
 		replacementPartsMap.put("PIOTA", "PIOTR");
-		replacementPartsMap.put("RADOS�AW", "RADEK");
+		replacementPartsMap.put("RADOSŁAW", "RADEK");
 		replacementPartsMap.put("SAS NOWOSIELSKI", "SAS-NOWOSIELSKI");
 		replacementPartsMap.put("SYMON", "SZYMON");
 		replacementPartsMap.put("TROJNAK", "TROJNAR");
@@ -53,24 +52,24 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("TYRDLIK\\?", "TYRALIK");
 		replacementPartsMap.put("WALDEMAR", "WALDEK");
 		replacementPartsMap.put("WOJCIECH", "WOJTEK");
-		replacementPartsMap.put("WYCI�CIK", "WYCI�LIK");
+		replacementPartsMap.put("WYCIŚCIK", "WYCIŚLIK");
 		replacementPartsMap.put("ZBIGNIEW", "ZBYSZEK");
-		replacementPartsMap.put("Z�ACHOWSKA", "Z�AKOWSKA");
+		replacementPartsMap.put("ZŁACHOWSKA", "ZŁAKOWSKA");
 		replacementPartsMap.put("ZUZANNA", "ZUZA");
 		replacementPartsMap.put("ZUZIA", "ZUZA");
 	}
 	private static Map<String, String> renamingMap = new HashMap<>();
-	static{
-		renamingMap.put("ADAM S", "ADAM SIE�KO");
-		renamingMap.put("ARTU W�JCIK", "ARTUR W�JCIK");
-		renamingMap.put("MA�ORZATA DOBISZ", "GOSIA DOBISZ");
-		renamingMap.put("JACEK J�ZEF CZECH", "JACEK CZECH");
+	static {
+		renamingMap.put("ADAM S", "ADAM SIEŃKO");
+		renamingMap.put("ARTU WÓJCIK", "ARTUR WÓJCIK");
+		renamingMap.put("MAŁORZATA DOBISZ", "GOSIA DOBISZ");
+		renamingMap.put("JACEK JÓZEF CZECH", "JACEK CZECH");
 		renamingMap.put("KUBA W", "KUBA WYBIERALSKI");
-		renamingMap.put("RAFA� PI�TAK", "DZIK");
+		renamingMap.put("RAFAŁ PIĘTAK", "DZIK");
 	}
 
 	private CompetitorsFactory() {
-		//prevents creating an instance
+		// prevents creating an instance
 	}
 
 	public static Competitor getOrCreateCompetitor(String club, Group group, String name, Sex sex) {

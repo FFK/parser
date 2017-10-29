@@ -6,7 +6,11 @@ import java.util.Collection;
 
 import org.apache.commons.io.FilenameUtils;
 
-public class FileReader {
+class FileReader {
+
+	private FileReader() {
+		// utils
+	}
 
 	static Collection<File> getTsvFiles(File directory) {
 		File[] allFilesInDirectory = directory.listFiles();

@@ -5,7 +5,6 @@ import java.util.List;
 
 import ffk.league.model.competitors.Group;
 
-
 public class Performance implements Comparable<Performance> {
 
 	List<BoulderResult> boulderResults;

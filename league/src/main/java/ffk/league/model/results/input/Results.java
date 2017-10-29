@@ -7,7 +7,6 @@ import java.util.Map;
 
 import ffk.league.model.competitors.Competitor;
 
-
 public class Results {
 
 	private List<String> editions = new ArrayList<>();
@@ -20,6 +19,5 @@ public class Results {
 	public Map<Competitor, PerformncesByEdition> getPerformancesMapsByCompetitor() {
 		return performancesMapsByCompetitor;
 	}
-
 
 }

@@ -16,15 +16,13 @@ import ffk.league.io.reader.LineReader;
 import ffk.league.model.results.output.Competition;
 import ffk.league.parser.Parser;
 
-
-
 public class ResultWriter {
-	
+
 	@Autowired
 	LineReader lineReader;
-	
+
 	private String season;
-	
+
 	public ResultWriter(String season) {
 		this.season = season;
 	}
@@ -43,14 +41,14 @@ public class ResultWriter {
 		lines.add(rows);
 		lines.addAll(lineReader.getLines(tableFooterFile.toPath()));
 		lines.addAll(lineReader.getLines(bottomContentFile.toPath()));
-		Path file = Paths.get("output/"+ season + "/" + competition.name() + ".html");
+		Path file = Paths.get("output/" + season + "/" + competition.name() + ".html");
 		try {
 			Files.write(file, lines, Charset.forName("UTF-8"));
 			if (competition == Competition.PRO_MEN) {
 				Files.write(Paths.get("output/" + season + "/Ranking.html"), lines, Charset.forName("UTF-8"));
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+			throw new IllegalStateException(e);
 		}
 	}
 

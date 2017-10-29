@@ -13,8 +13,7 @@ public class LineReader {
 		try (Stream<String> stream = Files.lines(path)) {
 			return stream.collect(Collectors.toList());
 		} catch (IOException e) {
-			e.printStackTrace();
-			return null;
+			throw new IllegalStateException(e);
 		}
 	}
 }

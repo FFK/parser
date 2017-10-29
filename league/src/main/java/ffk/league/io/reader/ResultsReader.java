@@ -20,7 +20,7 @@ public class ResultsReader {
 
 	@Autowired
 	LineReader lineReader;
-	
+
 	private String season;
 
 	public ResultsReader(String season) {

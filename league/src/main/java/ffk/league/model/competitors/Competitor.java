@@ -39,6 +39,7 @@ public class Competitor implements Comparable<Competitor> {
 	public String getClub() {
 		return club;
 	}
+
 	public Group getGroup() {
 		return group;
 	}

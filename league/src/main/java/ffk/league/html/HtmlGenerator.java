@@ -2,7 +2,7 @@ package ffk.league.html;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
+import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
 
@@ -19,8 +19,6 @@ import ffk.league.model.results.input.Results;
 import ffk.league.model.results.input.Score;
 import ffk.league.model.results.output.Competition;
 
-
-
 public class HtmlGenerator {
 
 	private static String createBoulderResultLabel(BoulderResult boulderResult) {
@@ -34,10 +32,10 @@ public class HtmlGenerator {
 		}
 	}
 
-	public  Map<Competition, String> createCompetitiorRows(Results results) {
-		Map<Competition, String> res = new HashMap<>();
+	public Map<Competition, String> createCompetitiorRows(Results results) {
+		Map<Competition, String> res = new EnumMap<>(Competition.class);
 
-		List<Competitor> competitors = new ArrayList<Competitor>(results.getPerformancesMapsByCompetitor().keySet());
+		List<Competitor> competitors = new ArrayList<>(results.getPerformancesMapsByCompetitor().keySet());
 		Collections.sort(competitors);
 
 		Group group = null;
@@ -53,8 +51,8 @@ public class HtmlGenerator {
 			if (!res.containsKey(competition)) {
 				res.put(competition, "");
 			}
-			res.put(competition, res.get(competition) + createCompetitorRow(competitor, results.getPerformancesMapsByCompetitor().get(competitor),
-					results.getEditions(), position));
+			res.put(competition, res.get(competition) + createCompetitorRow(competitor,
+					results.getPerformancesMapsByCompetitor().get(competitor), results.getEditions(), position));
 			position++;
 
 		}
@@ -84,7 +82,7 @@ public class HtmlGenerator {
 		pickResTd.appendText(createTopAndBonusesLabel(competitor.getScoreBest()));
 		pickResTd.setCSSClass("medium");
 		tr.appendChild(pickResTd);
-		
+
 		Td fullResTd = new Td();
 		fullResTd.appendText(createTopAndBonusesLabel(competitor.getScoreAll()));
 		fullResTd.setCSSClass("medium");
@@ -105,7 +103,8 @@ public class HtmlGenerator {
 					BoulderResult boulderResult = performncesByEdition.getMap().get(edition).getBoulderResults().get(i);
 					boulderTd.appendText(createBoulderResultLabel(boulderResult));
 				}
-				boulderTd.setCSSClass("colorful" + Integer.toString(editionNo) + " " + creteBoulderClass(i) + " single");
+				boulderTd
+						.setCSSClass("colorful" + Integer.toString(editionNo) + " " + creteBoulderClass(i) + " single");
 				boulderTd.setStyle("display:none");
 				tr.appendChild(boulderTd);
 			}
@@ -128,23 +127,6 @@ public class HtmlGenerator {
 			return "red";
 		}
 		return "black";
-	}
-
-	private static String getCategoryLabel(Competitor competitor) {
-		String sexLabel = competitor.getSex() == Sex.FEMELE ? "dziołchy" : "chopy";
-		switch (competitor.getGroup()) {
-		case EASY:
-			return "Lajtowa - " + sexLabel;
-		case HARD:
-			return "Trudna - " + sexLabel;
-		case PRO:
-			return "Pro - " + sexLabel;
-		case JUNIOR:
-			return "Bajtle - " + sexLabel;
-		case VETERAN:
-			return "Weteran - " + sexLabel;
-		}
-		throw new IllegalArgumentException();
 	}
 
 }
