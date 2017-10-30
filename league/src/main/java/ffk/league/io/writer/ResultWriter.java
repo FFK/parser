@@ -27,7 +27,16 @@ public class ResultWriter {
 		this.season = season;
 	}
 
-	public void createResultFile(Competition competition, String rows) {
+	public void writeFile(String name, List<String> content) {
+		Path file = Paths.get("output/" + season + "/" + name);
+		try {
+			Files.write(file, content, Charset.forName("UTF-8"));
+		} catch (IOException e) {
+			throw new IllegalStateException(e);
+		}
+	}
+
+	private void createResultFile(Competition competition, String rows) {
 		ClassLoader classLoader = Parser.class.getClassLoader();
 		File topContentFile = new File(classLoader.getResource(season + "/TopContent.html").getFile());
 		File tableHeaderFile = new File(classLoader.getResource(season + "/TableHeader.html").getFile());
@@ -41,15 +50,12 @@ public class ResultWriter {
 		lines.add(rows);
 		lines.addAll(lineReader.getLines(tableFooterFile.toPath()));
 		lines.addAll(lineReader.getLines(bottomContentFile.toPath()));
-		Path file = Paths.get("output/" + season + "/" + competition.name() + ".html");
-		try {
-			Files.write(file, lines, Charset.forName("UTF-8"));
-			if (competition == Competition.PRO_MEN) {
-				Files.write(Paths.get("output/" + season + "/Ranking.html"), lines, Charset.forName("UTF-8"));
-			}
-		} catch (IOException e) {
-			throw new IllegalStateException(e);
+
+		writeFile(competition.name() + ".html", lines);
+		if (competition == Competition.PRO_MEN) {
+			writeFile("Ranking.html", lines);
 		}
+
 	}
 
 	public void createResultFiles(Map<Competition, String> map) {

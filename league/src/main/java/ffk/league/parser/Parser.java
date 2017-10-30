@@ -36,7 +36,7 @@ public class Parser {
 		Results results = sumEditionResults(editionResults);
 		calculateScores(results);
 		resultWriter.createResultFiles(htmlGenerator.createCompetitiorRows(results));
-
+		resultWriter.writeFile("test.html", htmlGenerator.generate(results));
 	}
 
 	private void calculateScores(Results results) {
