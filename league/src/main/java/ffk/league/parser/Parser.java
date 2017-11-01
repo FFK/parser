@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import ffk.league.download.SpreadsheetDownloader;
+import ffk.league.git.GitCommiter;
 import ffk.league.html.HtmlGenerator;
 import ffk.league.io.writer.ResultWriter;
 import ffk.league.model.competitors.Competitor;
@@ -22,6 +23,8 @@ public class Parser {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(Parser.class);
 
+	@Autowired
+	private GitCommiter gitCommiter;
 	@Autowired
 	private HtmlGenerator htmlGenerator;
 	@Autowired
@@ -52,6 +55,15 @@ public class Parser {
 		resultWriter.createResultFiles(htmlGenerator.createCompetitiorRows(results));
 		resultWriter.writeFile("test.html", htmlGenerator.generate(results));
 		LOGGER.info("Writing files ended succesfully");
+		LOGGER.info("Persisiting started");
+		if (gitCommiter.hasChanges()) {
+			LOGGER.info("Changes detected, commiting and pushing started");
+			gitCommiter.push();
+			LOGGER.info("Commiting and pushing ended succesfully");
+		} else {
+			LOGGER.info("No changes detected");
+		}
+		LOGGER.info("Persisiting ended succesfully");
 		LOGGER.info(".........................");
 		LOGGER.info("Parsing ended succesfully");
 		LOGGER.info(".........................");

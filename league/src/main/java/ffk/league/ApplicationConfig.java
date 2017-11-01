@@ -9,6 +9,7 @@ import com.google.api.services.sheets.v4.Sheets;
 
 import ffk.league.download.SpreadsheetDownloader;
 import ffk.league.download.SpreadsheetServiceProvider;
+import ffk.league.git.GitCommiter;
 import ffk.league.html.HtmlGenerator;
 import ffk.league.input.InputParser;
 import ffk.league.io.reader.LineReader;
@@ -22,6 +23,11 @@ public class ApplicationConfig {
 
 	@Autowired
 	Settings settings;
+
+	@Bean
+	public GitCommiter gitCommiter() {
+		return new GitCommiter(settings.getGitUsername(), settings.getGitPassword());
+	}
 
 	@Bean
 	public HtmlGenerator htmlGenerator() {
