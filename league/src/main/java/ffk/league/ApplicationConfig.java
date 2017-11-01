@@ -5,7 +5,12 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.google.api.services.sheets.v4.Sheets;
+
+import ffk.league.download.SpreadsheetDownloader;
+import ffk.league.download.SpreadsheetServiceProvider;
 import ffk.league.html.HtmlGenerator;
+import ffk.league.input.InputParser;
 import ffk.league.io.reader.LineReader;
 import ffk.league.io.reader.ResultsReader;
 import ffk.league.io.writer.ResultWriter;
@@ -21,6 +26,11 @@ public class ApplicationConfig {
 	@Bean
 	public HtmlGenerator htmlGenerator() {
 		return new HtmlGenerator();
+	}
+
+	@Bean
+	public InputParser inputParser() {
+		return new InputParser();
 	}
 
 	@Bean
@@ -41,6 +51,16 @@ public class ApplicationConfig {
 	@Bean
 	ResultWriter resultWriter() {
 		return new ResultWriter(settings.getSeason());
+	}
+
+	@Bean
+	Sheets sheetsService() {
+		return SpreadsheetServiceProvider.getSheetsService();
+	}
+
+	@Bean
+	SpreadsheetDownloader spreadsheetDownloader() {
+		return new SpreadsheetDownloader();
 	}
 
 }

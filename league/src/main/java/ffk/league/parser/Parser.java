@@ -5,8 +5,8 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import ffk.league.download.SpreadsheetDownloader;
 import ffk.league.html.HtmlGenerator;
-import ffk.league.io.reader.ResultsReader;
 import ffk.league.io.writer.ResultWriter;
 import ffk.league.model.competitors.Competitor;
 import ffk.league.model.results.input.Performance;
@@ -19,11 +19,11 @@ import ffk.league.model.results.output.EditionResults;
 public class Parser {
 
 	@Autowired
-	HtmlGenerator htmlGenerator;
+	private HtmlGenerator htmlGenerator;
 	@Autowired
-	ResultsReader resultsReader;
+	private SpreadsheetDownloader spreadsheetDownloader;
 	@Autowired
-	ResultWriter resultWriter;
+	private ResultWriter resultWriter;
 
 	private int excludedEditions;
 
@@ -32,7 +32,7 @@ public class Parser {
 	}
 
 	public void parse() {
-		List<EditionResults> editionResults = resultsReader.readResultFiles();
+		List<EditionResults> editionResults = spreadsheetDownloader.downloadAllEditions();
 		Results results = sumEditionResults(editionResults);
 		calculateScores(results);
 		resultWriter.createResultFiles(htmlGenerator.createCompetitiorRows(results));

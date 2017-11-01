@@ -9,7 +9,6 @@ public class EditionResults {
 	private Collection<CompetitorAndPerformance> performances = new ArrayList<>();
 
 	public EditionResults(String name) {
-		super();
 		this.name = name;
 	}
 
