@@ -12,6 +12,15 @@ public class LeagueApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(LeagueApplication.class, args);
 		Parser parser = (Parser) context.getBean("parser");
-		parser.parse();
+
+		while (true) {
+			parser.parse();
+			try {
+				Thread.sleep(60000);
+			} catch (InterruptedException e) {
+				throw new IllegalStateException(e);
+			}
+		}
+
 	}
 }

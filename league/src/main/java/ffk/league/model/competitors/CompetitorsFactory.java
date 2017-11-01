@@ -87,6 +87,11 @@ public final class CompetitorsFactory {
 		}
 	}
 
+	public static void clear() {
+		competitors = new HashMap<>();
+		replacementPartsMap = new HashMap<>();
+	}
+
 	private static String standarizeString(String string) {
 		String res = string.toUpperCase().trim();
 		for (Map.Entry<String, String> entry : replacementPartsMap.entrySet()) {
