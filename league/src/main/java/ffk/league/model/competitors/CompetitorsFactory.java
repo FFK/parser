@@ -89,7 +89,6 @@ public final class CompetitorsFactory {
 
 	public static void clear() {
 		competitors = new HashMap<>();
-		replacementPartsMap = new HashMap<>();
 	}
 
 	private static String standarizeString(String string) {

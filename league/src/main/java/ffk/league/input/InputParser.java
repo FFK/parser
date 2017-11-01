@@ -16,7 +16,7 @@ import ffk.league.model.results.output.CompetitorAndPerformance;
 public class InputParser {
 
 	public boolean isResultLineBlank(List<String> fields) {
-		return StringUtils.isEmpty(fields.get(1));
+		return fields.size() < 24 || StringUtils.isEmpty(fields.get(1));
 	}
 
 	private BoulderResult parseBoulderResult(String result) {

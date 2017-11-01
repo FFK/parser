@@ -50,27 +50,6 @@ public class SpreadsheetDownloader {
 		EditionResults editionResults = new EditionResults(name);
 		editionResults.getPerformances().addAll(parseSheetData(sheetData));
 		return editionResults;
-
-		// 'ŚLB 2017/18, 1 runda Blo'!B2:AA321
-		// Prints the names and majors of students in a sample spreadsheet:
-		// https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
-		// String spreadsheetId = "1UGW47N81kOXISrHylksgVKRgLCbiR_ziUA73aJCe0Bk";
-		// String range = "'ŚLB 2017/18, 3. runda-Poziom'!B1:B6";
-		// String range = sheetName + "B2:AA321";
-		// ValueRange response = service.spreadsheets().values().get(spreadsheetId,
-		// range).execute();
-		// List<List<Object>> values = response.getValues();
-		// if (values == null || values.size() == 0) {
-		// LOGGER.warn("No data found.");
-		// } else {
-		// LOGGER.info("Retrieving data from the spreadsheet: " + spreadsheetId + "
-		// range: " + range);
-		//
-		// for (List row : values) {
-		// // Print columns A and E, which correspond to indices 0 and 4.
-		// System.out.printf("%s, %s\n", row.get(0), row.get(4));
-		// }
-		// }
 	}
 
 	private List<List<Object>> getSheetData(String spreadsheetId, String sheetName) {

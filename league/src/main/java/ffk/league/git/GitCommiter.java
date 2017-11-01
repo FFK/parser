@@ -33,7 +33,7 @@ public class GitCommiter {
 
 	public void push() {
 		try (Git git = Git.open(new File(System.getProperty("user.dir") + "/output/.git"))) {
-			git.commit().setMessage("test").setAuthor("Mincer", "faker.faker.klama@gmail.com").setAll(true)
+			git.commit().setMessage("Mincer update").setAuthor("Mincer", "faker.faker.klama@gmail.com").setAll(true)
 					.setAllowEmpty(false).call();
 			git.push().setRemote("origin")
 					.setCredentialsProvider(new UsernamePasswordCredentialsProvider(gitUsername, gitPassword)).call();
