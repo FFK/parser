@@ -3,6 +3,8 @@ package ffk.league.parser;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import ffk.league.download.SpreadsheetDownloader;
@@ -18,6 +20,8 @@ import ffk.league.model.results.output.EditionResults;
 
 public class Parser {
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(Parser.class);
+
 	@Autowired
 	private HtmlGenerator htmlGenerator;
 	@Autowired
@@ -32,11 +36,25 @@ public class Parser {
 	}
 
 	public void parse() {
+		LOGGER.info("...............");
+		LOGGER.info("Parsing started");
+		LOGGER.info("...............");
+		LOGGER.info("Retrieving data started");
 		List<EditionResults> editionResults = spreadsheetDownloader.downloadAllEditions();
+		LOGGER.info("Retrieving ended succesfully");
+		LOGGER.info("Geathering results started");
 		Results results = sumEditionResults(editionResults);
+		LOGGER.info("Geathering results ended succesfully");
+		LOGGER.info("Calculating scores started");
 		calculateScores(results);
+		LOGGER.info("Calculating scores ended succesfully");
+		LOGGER.info("Writing files started");
 		resultWriter.createResultFiles(htmlGenerator.createCompetitiorRows(results));
 		resultWriter.writeFile("test.html", htmlGenerator.generate(results));
+		LOGGER.info("Writing files ended succesfully");
+		LOGGER.info(".........................");
+		LOGGER.info("Parsing ended succesfully");
+		LOGGER.info(".........................");
 	}
 
 	private void calculateScores(Results results) {
