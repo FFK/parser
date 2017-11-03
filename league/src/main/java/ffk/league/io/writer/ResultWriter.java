@@ -98,8 +98,9 @@ public class ResultWriter {
 			stringBuilder.append(c == competition ? " selected" : "");
 			stringBuilder.append("\">");
 			stringBuilder.append(getMenuLabel(c));
-			stringBuilder.append("</a>");
+			stringBuilder.append("</a>\n");
 		}
+		stringBuilder.append("<button class=\"go\" onclick=\"go();\">go</button>");
 		stringBuilder.append("<hr />");
 		return stringBuilder.toString();
 	}

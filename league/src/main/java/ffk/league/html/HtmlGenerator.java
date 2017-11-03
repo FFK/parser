@@ -82,6 +82,7 @@ public class HtmlGenerator {
 		tabs.appendChild(createTab(Competition.JUNIOR_WOMEN));
 		tabs.appendChild(createTab(Competition.VETERAN_MEN));
 		tabs.appendChild(createTab(Competition.VETERAN_WOMEN));
+		tabs.appendElement("button").addClass("go").text("go").attr("onclick", "go();");
 		tabs.appendElement("hr");
 		return tabs;
 	}
