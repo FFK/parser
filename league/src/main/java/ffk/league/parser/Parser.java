@@ -32,9 +32,11 @@ public class Parser {
 	@Autowired
 	private ResultWriter resultWriter;
 
+	private boolean autoCommit;
 	private int excludedEditions;
 
-	public Parser(int excludedProperties) {
+	public Parser(boolean autoCommit, int excludedProperties) {
+		this.autoCommit = autoCommit;
 		this.excludedEditions = excludedProperties;
 	}
 
@@ -55,15 +57,17 @@ public class Parser {
 		resultWriter.createResultFiles(htmlGenerator.createCompetitiorRows(results));
 		resultWriter.writeFile("test.html", htmlGenerator.generate(results));
 		LOGGER.info("Writing files ended succesfully");
-		LOGGER.info("Persisiting started");
-		if (gitCommiter.hasChanges()) {
-			LOGGER.info("Changes detected, commiting and pushing started");
-			gitCommiter.push();
-			LOGGER.info("Commiting and pushing ended succesfully");
-		} else {
-			LOGGER.info("No changes detected");
+		if (autoCommit) {
+			LOGGER.info("Persisiting started");
+			if (gitCommiter.hasChanges()) {
+				LOGGER.info("Changes detected, commiting and pushing started");
+				gitCommiter.push();
+				LOGGER.info("Commiting and pushing ended succesfully");
+			} else {
+				LOGGER.info("No changes detected");
+			}
+			LOGGER.info("Persisiting ended succesfully");
 		}
-		LOGGER.info("Persisiting ended succesfully");
 		LOGGER.info(".........................");
 		LOGGER.info("Parsing ended succesfully");
 		LOGGER.info(".........................");

@@ -5,10 +5,19 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "league")
 public class Settings {
 
+	private boolean autoCommit;
 	private int excludedEditions;
 	private String gitPassword;
 	private String gitUsername;
 	private String season;
+
+	public boolean isAutoCommit() {
+		return autoCommit;
+	}
+
+	public void setAutoCommit(boolean autoCommit) {
+		this.autoCommit = autoCommit;
+	}
 
 	public int getExcludedEditions() {
 		return excludedEditions;

@@ -46,7 +46,7 @@ public class ApplicationConfig {
 
 	@Bean
 	public Parser parser() {
-		return new Parser(settings.getExcludedEditions());
+		return new Parser(settings.isAutoCommit(), settings.getExcludedEditions());
 	}
 
 	@Bean
