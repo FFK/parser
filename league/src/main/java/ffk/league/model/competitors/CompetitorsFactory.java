@@ -51,7 +51,7 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("TYNALIK", "TYRALIK");
 		replacementPartsMap.put("TYRDLIK\\?", "TYRALIK");
 		replacementPartsMap.put("WALDEMAR", "WALDEK");
-		replacementPartsMap.put("WOJCIECH", "WOJTEK");
+		replacementPartsMap.put("WOJCIECH ", "WOJTEK ");
 		replacementPartsMap.put("WYCIŚCIK", "WYCIŚLIK");
 		replacementPartsMap.put("ZBIGNIEW", "ZBYSZEK");
 		replacementPartsMap.put("ZŁACHOWSKA", "ZŁAKOWSKA");
