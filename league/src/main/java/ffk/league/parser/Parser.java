@@ -15,7 +15,6 @@ import ffk.league.model.competitors.Competitor;
 import ffk.league.model.results.input.Performance;
 import ffk.league.model.results.input.PerformncesByEdition;
 import ffk.league.model.results.input.Results;
-import ffk.league.model.results.input.Score;
 import ffk.league.model.results.output.CompetitorAndPerformance;
 import ffk.league.model.results.output.EditionResults;
 
@@ -54,8 +53,7 @@ public class Parser {
 		calculateScores(results);
 		LOGGER.info("Calculating scores ended succesfully");
 		LOGGER.info("Writing files started");
-		resultWriter.createResultFiles(htmlGenerator.createCompetitiorRows(results));
-		resultWriter.writeFile("test.html", htmlGenerator.generate(results));
+		resultWriter.writeFile("TopHunters.html", htmlGenerator.generate(results));
 		LOGGER.info("Writing files ended succesfully");
 		if (autoCommit) {
 			LOGGER.info("Persisiting started");
@@ -75,14 +73,8 @@ public class Parser {
 
 	private void calculateScores(Results results) {
 		for (Competitor competitor : results.getPerformancesMapsByCompetitor().keySet()) {
-			int allTops = results.getPerformancesMapsByCompetitor().get(competitor).countTops();
-			int allBonuses = results.getPerformancesMapsByCompetitor().get(competitor).countBonuses();
-			int bestTops = results.getPerformancesMapsByCompetitor().get(competitor)
-					.countBestEditionsTops(results.getEditions().size() - excludedEditions);
-			int bestBonuses = results.getPerformancesMapsByCompetitor().get(competitor)
-					.countBestEditionsBonuses(results.getEditions().size() - excludedEditions);
-			competitor.setScoreAll(new Score(allTops, allBonuses));
-			competitor.setScoreBest(new Score(bestTops, bestBonuses));
+			competitor.setScoreAll(
+					results.getPerformancesMapsByCompetitor().get(competitor).getMap().get("0").countScore());
 		}
 	}
 

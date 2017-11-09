@@ -17,7 +17,6 @@ import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.model.ValueRange;
 
 import ffk.league.input.InputParser;
-import ffk.league.model.competitors.CompetitorsFactory;
 import ffk.league.model.results.output.CompetitorAndPerformance;
 import ffk.league.model.results.output.EditionResults;
 
@@ -40,7 +39,6 @@ public class SpreadsheetDownloader {
 		for (int i = 0; i < spreadsheetIds.size(); ++i) {
 			res.add(downloadEdition(Integer.toString(i), spreadsheetIds.get(i), sheetNames.get(i)));
 		}
-		CompetitorsFactory.clear();
 		return res;
 	}
 
@@ -53,7 +51,7 @@ public class SpreadsheetDownloader {
 	}
 
 	private List<List<Object>> getSheetData(String spreadsheetId, String sheetName) {
-		String range = "'" + sheetName + "'" + "!A2:AA321";
+		String range = "'" + sheetName + "'" + "!A3:R1000";
 		ValueRange response;
 		try {
 			response = sheets.spreadsheets().values().get(spreadsheetId, range).execute();

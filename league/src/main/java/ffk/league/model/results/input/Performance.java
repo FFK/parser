@@ -1,16 +1,13 @@
 package ffk.league.model.results.input;
 
-import java.util.Collections;
 import java.util.List;
-
-import ffk.league.model.competitors.Group;
 
 public class Performance implements Comparable<Performance> {
 
 	List<BoulderResult> boulderResults;
-	Group group;
+	String group;
 
-	public Performance(Group group, List<BoulderResult> boulderResults) {
+	public Performance(String group, List<BoulderResult> boulderResults) {
 		super();
 		this.group = group;
 		this.boulderResults = boulderResults;
@@ -22,36 +19,11 @@ public class Performance implements Comparable<Performance> {
 	}
 
 	public Score countScore() {
-		int tops, bonuses;
-		switch (group) {
-		case PRO:
-			tops = Collections.frequency(boulderResults.subList(10, 20), BoulderResult.TOP);
-			bonuses = Collections.frequency(boulderResults.subList(10, 20), BoulderResult.BONUS);
-			break;
-		case HARD:
-			tops = Collections.frequency(boulderResults.subList(5, 15), BoulderResult.TOP);
-			bonuses = Collections.frequency(boulderResults.subList(5, 15), BoulderResult.BONUS);
-			if (tops == 10 && 0 < Collections.frequency(boulderResults.subList(15, 20), BoulderResult.TOP)) {
-				++tops;
-			} else if (tops == 10 && 0 < Collections.frequency(boulderResults.subList(15, 20), BoulderResult.BONUS)) {
-				++bonuses;
-			}
-			break;
-		case EASY:
-			tops = Collections.frequency(boulderResults.subList(0, 10), BoulderResult.TOP);
-			bonuses = Collections.frequency(boulderResults.subList(0, 10), BoulderResult.BONUS);
-			if (tops == 10 && 0 < Collections.frequency(boulderResults.subList(10, 15), BoulderResult.TOP)) {
-				++tops;
-			} else if (tops == 10 && 0 < Collections.frequency(boulderResults.subList(10, 15), BoulderResult.BONUS)) {
-				++bonuses;
-			}
-			break;
-		default:
-			tops = Collections.frequency(boulderResults, BoulderResult.TOP);
-			bonuses = Collections.frequency(boulderResults, BoulderResult.BONUS);
-			break;
-		}
-		return new Score(tops, tops + bonuses);
+		int tops = (int) boulderResults.stream().filter(r -> r.getTop() > 0).count();
+		int bonuses = (int) boulderResults.stream().filter(r -> r.getBonus() > 0).count();
+		int topsTries = boulderResults.stream().mapToInt(r -> r.getTop()).sum();
+		int bonusesTries = boulderResults.stream().mapToInt(r -> r.getBonus()).sum();
+		return new Score(bonuses, bonusesTries, tops, topsTries);
 	}
 
 	public List<BoulderResult> getBoulderResults() {

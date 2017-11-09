@@ -3,9 +3,7 @@ package ffk.league.html;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.EnumMap;
 import java.util.List;
-import java.util.Map;
 
 import org.jsoup.nodes.Element;
 
@@ -13,26 +11,17 @@ import com.hp.gagawa.java.elements.Td;
 import com.hp.gagawa.java.elements.Tr;
 
 import ffk.league.model.competitors.Competitor;
-import ffk.league.model.competitors.Group;
-import ffk.league.model.competitors.Sex;
 import ffk.league.model.results.input.BoulderResult;
-import ffk.league.model.results.input.Performance;
 import ffk.league.model.results.input.PerformncesByEdition;
 import ffk.league.model.results.input.Results;
 import ffk.league.model.results.input.Score;
-import ffk.league.model.results.output.Competition;
 
 public class HtmlGenerator {
 
 	private static String createBoulderResultLabel(BoulderResult boulderResult) {
-		switch (boulderResult) {
-		case TOP:
-			return "T";
-		case BONUS:
-			return "B";
-		default:
-			return "";
-		}
+		String top = boulderResult.getTop() == 0 ? "--" : Integer.toString(boulderResult.getTop()) + "t";
+		String bonus = boulderResult.getBonus() == 0 ? "--" : Integer.toString(boulderResult.getBonus()) + "b";
+		return top + " / " + bonus;
 	}
 
 	public List<String> generate(Results results) {
@@ -57,66 +46,42 @@ public class HtmlGenerator {
 
 	private Element createBody(Results results) {
 		Element body = new Element("body");
-		body.appendChild(createSearch());
-		body.appendChild(createTabs());
+		body.appendChild(createTop());
 		body.appendChild(createTable(results));
 		body.appendElement("script").attr("src", "functions.js");
 		return body;
 	}
 
-	private Element createSearch() {
-		Element search = new Element("div");
-		search.appendElement("span").text("wciep tekst");
-		search.appendElement("input").attr("type", "text");
-		return search;
+	private Element createTop() {
+		Element topDiv = new Element("div").addClass("container");
+		topDiv.appendChild(createLogo());
+		topDiv.appendChild(createTitle());
+		topDiv.appendChild(createCategoryTabs());
+		return topDiv;
 	}
 
-	private Element createTabs() {
-		Element tabs = new Element("span");
-		tabs.appendChild(createTab(Competition.PRO_MEN).addClass("selected"));
-		tabs.appendChild(createTab(Competition.HARD_MEN));
-		tabs.appendChild(createTab(Competition.EASY_MEN));
-		tabs.appendChild(createTab(Competition.HARD_WOMEN));
-		tabs.appendChild(createTab(Competition.EASY_WOMEN));
-		tabs.appendChild(createTab(Competition.JUNIOR_MEN));
-		tabs.appendChild(createTab(Competition.JUNIOR_WOMEN));
-		tabs.appendChild(createTab(Competition.VETERAN_MEN));
-		tabs.appendChild(createTab(Competition.VETERAN_WOMEN));
-		tabs.appendElement("button").addClass("go").text("go").attr("onclick", "go();");
-		tabs.appendElement("hr");
+	private Element createLogo() {
+		Element logo = new Element("div").addClass("logo");
+		logo.appendElement("img").attr("src", "img/logo_poziom450.png");
+		return logo;
+	}
+
+	private Element createTitle() {
+		Element title = new Element("div").addClass("title-wrapper");
+		title.appendElement("div").addClass("title");
+		title.appendElement("div").addClass("category").appendElement("h1").text("Chłopcy 9 - 11");
+		return title;
+	}
+
+	private Element createCategoryTabs() {
+		Element tabs = new Element("div").addClass("category-tabs");
+		tabs.appendElement("div").text("Chłopcy 9 - 11");
+		tabs.appendElement("div").text("Chłopcy 12 - 13");
+		tabs.appendElement("div").text("Chłopcy 14 - 15");
+		tabs.appendElement("div").text("Dziewczynki 9 - 11");
+		tabs.appendElement("div").text("Dziewczynki 12 - 13");
+		tabs.appendElement("div").text("Dziewczynki 14 - 15");
 		return tabs;
-	}
-
-	private Element createTab(Competition competition) {
-		return new Element("a").addClass("tab").text(getMenuLabel(competition)).attr("onclick",
-				String.format("switchTab('%s');", competition.name()));
-
-	}
-
-	// TODO move to props
-	private static String getMenuLabel(Competition competition) {
-		switch (competition) {
-		case PRO_MEN:
-			return "Chopy Pro";
-		case HARD_MEN:
-			return "Chopy Trudna";
-		case EASY_MEN:
-			return "Chopy Lajt";
-		case HARD_WOMEN:
-			return "Dziołchy Trudna";
-		case EASY_WOMEN:
-			return "Dziołchy Lajt";
-		case JUNIOR_MEN:
-			return "Bajtle";
-		case JUNIOR_WOMEN:
-			return "Dziołszki";
-		case VETERAN_MEN:
-			return "Weterani";
-		case VETERAN_WOMEN:
-			return "Weteranki";
-		default:
-			return null;
-		}
 	}
 
 	private Element createTable(Results results) {
@@ -132,96 +97,55 @@ public class HtmlGenerator {
 		thead.appendChild(tr);
 		tr.appendElement("th").addClass("single");
 		tr.appendElement("th").addClass("wide").text("Zawodnik");
-		tr.appendElement("th").addClass("wide").text("Klub");
-		tr.appendElement("th").addClass("medium").text("Bez trzech rund");
-		tr.appendElement("th").addClass("medium").text("Wszystkie rundy");
-		addEditionColumnHeads(tr, "07.10", "BLO", "BLOKatowice", "colorful0");
-		addEditionColumnHeads(tr, "21.10", "SKARPA", "Skarpa Bytom", "colorful1");
-		addEditionColumnHeads(tr, "04.11", "POZIOM", "Poziom450, Sosnowiec", "colorful2");
-		addEditionColumnHeads(tr, "18.11", "SALEWA", "Salewa Blok, Zabrze", "colorful3");
-		addEditionColumnHeads(tr, "02.12", "TRAFO", "CW Transformator, Katowice", "colorful4");
-		addEditionColumnHeads(tr, "16.12", "TOTEM", "CW Totem, Bielsko-Biala", "colorful5");
-		addEditionColumnHeads(tr, "06.01", "BLO", "BLOKatowice", "colorful6");
-		addEditionColumnHeads(tr, "20.01", "SALEWA", "Salewa Blok, Zabrze", "colorful7");
-		addEditionColumnHeads(tr, "03.02", "SKARPA", "Skarpa Bytom", "colorful8");
-		addEditionColumnHeads(tr, "17.02", "POZIOM", "Poziom450, Sosnowiec", "colorful9");
-		addEditionColumnHeads(tr, "03.03", "PROGRES", "Progres, Siemianowice Sl.", "colorful10");
-		addEditionColumnHeads(tr, "02.12", "TRAFO", "CW Transformator, Katowice", "colorful11");
+		tr.appendElement("th").addClass("medium").text("Suma");
+		addEditionColumnHeads(tr, "colorful0");
 		return thead;
 
 	}
 
-	private void addEditionColumnHeads(Element parent, String text, String subtext, String title, String editionClass) {
-		parent.appendChild(createEditionColumnHead(text, subtext, title, editionClass));
-		String cssColor = "yellow";
-		for (int i = 1; i <= 20; ++i) {
+	private void addEditionColumnHeads(Element parent, String editionClass) {
+		String cssColor = "boulder";
+		for (int i = 1; i <= 8; ++i) {
 			parent.appendChild(createProblemColumnHead(i, editionClass, cssColor));
-			cssColor = i == 5 ? "blue" : cssColor;
-			cssColor = i == 10 ? "red" : cssColor;
-			cssColor = i == 15 ? "black" : cssColor;
 		}
-	}
-
-	private Element createEditionColumnHead(String text, String subText, String title, String editionClass) {
-		Element column = new Element("th").addClass("tight").addClass("pointer").addClass(editionClass);
-		column.attr("title", title);
-		column.attr("onclick", String.format("toggle('%s');", editionClass));
-		column.text(text + "\n");
-		column.appendElement("span").text(subText).addClass("subtitle");
-		return column;
 	}
 
 	private Element createProblemColumnHead(int problemNumber, String editionClass, String cssColor) {
 		Element column = new Element("th").addClass("single").addClass("cssColor").addClass(editionClass);
 		column.text(Integer.toString(problemNumber));
-		column.attr("onclick", String.format("toggle('%s');", editionClass));
-		column.attr("style", "display: none");
 		return column;
 	}
 
 	private Element createTableBody(Results results) {
 		Element tbody = new Element("tbody");
-		Map<Competition, String> competitorRows = createCompetitiorRows(results);
-		for (Competition competition : Competition.values()) {
-			tbody.append(competitorRows.get(competition));
+		List<String> competitorRows = createCompetitiorRows(results);
+		for (String row : competitorRows) {
+			tbody.append(row);
 		}
 		return tbody;
 	}
 
-	public Map<Competition, String> createCompetitiorRows(Results results) {
-		Map<Competition, String> res = new EnumMap<>(Competition.class);
-
+	public List<String> createCompetitiorRows(Results results) {
+		List<String> res = new ArrayList<>();
 		List<Competitor> competitors = new ArrayList<>(results.getPerformancesMapsByCompetitor().keySet());
 		Collections.sort(competitors);
 
-		Group group = null;
-		Sex sex = null;
-		int position = 1;
 		for (Competitor competitor : competitors) {
-			if (!competitor.getGroup().equals(group) || !competitor.getSex().equals(sex)) {
-				position = 1;
-				group = competitor.getGroup();
-				sex = competitor.getSex();
-			}
-			Competition competition = Competition.getCompetition(competitor.getGroup(), competitor.getSex());
-			if (!res.containsKey(competition)) {
-				res.put(competition, "");
-			}
-			res.put(competition, res.get(competition) + createCompetitorRow(competitor,
-					results.getPerformancesMapsByCompetitor().get(competitor), results.getEditions(), position));
-			position++;
+			String competition = competitor.getGroup();
+			res.add(createCompetitorRow(competitor, results.getPerformancesMapsByCompetitor().get(competitor),
+					results.getEditions()));
 
 		}
 		return res;
 	}
 
 	private static String createCompetitorRow(Competitor competitor, PerformncesByEdition performncesByEdition,
-			List<String> editions, int position) {
+			List<String> editions) {
 		Tr tr = new Tr();
-		tr.setCSSClass(Competition.getCompetition(competitor.getGroup(), competitor.getSex()).name());
+		tr.setCSSClass(competitor.getGroup());
 
 		Td positionTd = new Td();
-		positionTd.appendText(Integer.toString(position));
+		positionTd.appendText("");
 		positionTd.setCSSClass("single");
 		tr.appendChild(positionTd);
 
@@ -230,59 +154,27 @@ public class HtmlGenerator {
 		nameTd.setCSSClass("wide");
 		tr.appendChild(nameTd);
 
-		Td clubTd = new Td();
-		clubTd.appendText(competitor.getClub());
-		clubTd.setCSSClass("wide");
-		tr.appendChild(clubTd);
-
-		Td pickResTd = new Td();
-		pickResTd.appendText(createTopAndBonusesLabel(competitor.getScoreBest()));
-		pickResTd.setCSSClass("medium");
-		tr.appendChild(pickResTd);
-
 		Td fullResTd = new Td();
 		fullResTd.appendText(createTopAndBonusesLabel(competitor.getScoreAll()));
 		fullResTd.setCSSClass("medium");
 		tr.appendChild(fullResTd);
 
-		int editionNo = 0;
-		for (String edition : editions) {
-			Td sumTd = new Td();
-			sumTd.setCSSClass("colorful" + Integer.toString(editionNo) + " tight");
+		String edition = editions.get(0);
+		for (int i = 0; i < 8; ++i) {
+			Td boulderTd = new Td();
 			if (performncesByEdition.getMap().containsKey(edition)) {
-				Performance performance = performncesByEdition.getMap().get(edition);
-				sumTd.appendText(createTopAndBonusesLabel(performance.countScore()));
+				BoulderResult boulderResult = performncesByEdition.getMap().get(edition).getBoulderResults().get(i);
+				boulderTd.appendText(createBoulderResultLabel(boulderResult));
 			}
-			tr.appendChild(sumTd);
-			for (int i = 0; i < 20; ++i) {
-				Td boulderTd = new Td();
-				if (performncesByEdition.getMap().containsKey(edition)) {
-					BoulderResult boulderResult = performncesByEdition.getMap().get(edition).getBoulderResults().get(i);
-					boulderTd.appendText(createBoulderResultLabel(boulderResult));
-				}
-				boulderTd
-						.setCSSClass("colorful" + Integer.toString(editionNo) + " " + creteBoulderClass(i) + " single");
-				boulderTd.setStyle("display:none");
-				tr.appendChild(boulderTd);
-			}
-
-			editionNo++;
+			boulderTd.setCSSClass("colorful0 single");
+			tr.appendChild(boulderTd);
 		}
+
 		return tr.write() + "\n";
 	}
 
 	private static String createTopAndBonusesLabel(Score score) {
-		return Integer.toString(score.getTops()) + '(' + Integer.toString(score.getBonuses()) + ')';
-	}
-
-	private static String creteBoulderClass(int number) {
-		if (number < 5) {
-			return "yellow";
-		} else if (number < 10) {
-			return "blue";
-		} else if (number < 15) {
-			return "red";
-		}
-		return "black";
+		return Integer.toString(score.getTops()) + "t" + Integer.toString(score.getTopsTries()) + " "
+				+ Integer.toString(score.getBonuses()) + "b" + Integer.toString(score.getBonusesTries());
 	}
 }
