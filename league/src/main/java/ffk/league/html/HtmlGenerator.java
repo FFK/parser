@@ -75,17 +75,17 @@ public class HtmlGenerator {
 
 	private Element createCategoryTabs() {
 		Element tabs = new Element("div").addClass("category-tabs");
-		tabs.appendElement("div").text("Chłopcy 9 - 11").attr("onclick", "switchEdition(0);")
+		tabs.appendElement("div").text("Chłopcy 9 - 11").attr("onclick", "main.switch(0,'stop');")
 				.addClass("categoryButton");
-		tabs.appendElement("div").text("Chłopcy 12 - 13").attr("onclick", "switchEdition(1);")
+		tabs.appendElement("div").text("Chłopcy 12 - 13").attr("onclick", "main.switch(1,'stop');")
 				.addClass("categoryButton");
-		tabs.appendElement("div").text("Chłopcy 14 - 15").attr("onclick", "switchEdition(2);")
+		tabs.appendElement("div").text("Chłopcy 14 - 15").attr("onclick", "main.switch(2,'stop');")
 				.addClass("categoryButton");
-		tabs.appendElement("div").text("Dziewczynki 9 - 11").attr("onclick", "switchEdition(3);")
+		tabs.appendElement("div").text("Dziewczynki 9 - 11").attr("onclick", "main.switch(3,'stop');")
 				.addClass("categoryButton");
-		tabs.appendElement("div").text("Dziewczynki 12 - 13").attr("onclick", "switchEdition(4);")
+		tabs.appendElement("div").text("Dziewczynki 12 - 13").attr("onclick", "main.switch(4,'stop');")
 				.addClass("categoryButton");
-		tabs.appendElement("div").text("Dziewczynki 14 - 15").attr("onclick", "switchEdition(5);")
+		tabs.appendElement("div").text("Dziewczynki 14 - 15").attr("onclick", "main.switch(5,'stop');")
 				.addClass("categoryButton");
 		return tabs;
 	}
