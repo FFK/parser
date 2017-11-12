@@ -19,8 +19,8 @@ import ffk.league.model.results.input.Score;
 public class HtmlGenerator {
 
 	private static String createBoulderResultLabel(BoulderResult boulderResult) {
-		String top = boulderResult.getTop() == 0 ? "--" : Integer.toString(boulderResult.getTop()) + "t";
-		String bonus = boulderResult.getBonus() == 0 ? "--" : Integer.toString(boulderResult.getBonus()) + "b";
+		String top = boulderResult.getTop() == 0 ? "--" : "t" + Integer.toString(boulderResult.getTop());
+		String bonus = boulderResult.getBonus() == 0 ? "--" : "b" + Integer.toString(boulderResult.getBonus());
 		return top + " / " + bonus;
 	}
 
