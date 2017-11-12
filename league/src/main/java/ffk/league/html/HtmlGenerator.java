@@ -75,12 +75,18 @@ public class HtmlGenerator {
 
 	private Element createCategoryTabs() {
 		Element tabs = new Element("div").addClass("category-tabs");
-		tabs.appendElement("div").text("Chłopcy 9 - 11");
-		tabs.appendElement("div").text("Chłopcy 12 - 13");
-		tabs.appendElement("div").text("Chłopcy 14 - 15");
-		tabs.appendElement("div").text("Dziewczynki 9 - 11");
-		tabs.appendElement("div").text("Dziewczynki 12 - 13");
-		tabs.appendElement("div").text("Dziewczynki 14 - 15");
+		tabs.appendElement("div").text("Chłopcy 9 - 11").attr("onclick", "switchEdition(0);")
+				.addClass("categoryButton");
+		tabs.appendElement("div").text("Chłopcy 12 - 13").attr("onclick", "switchEdition(1);")
+				.addClass("categoryButton");
+		tabs.appendElement("div").text("Chłopcy 14 - 15").attr("onclick", "switchEdition(2);")
+				.addClass("categoryButton");
+		tabs.appendElement("div").text("Dziewczynki 9 - 11").attr("onclick", "switchEdition(3);")
+				.addClass("categoryButton");
+		tabs.appendElement("div").text("Dziewczynki 12 - 13").attr("onclick", "switchEdition(4);")
+				.addClass("categoryButton");
+		tabs.appendElement("div").text("Dziewczynki 14 - 15").attr("onclick", "switchEdition(5);")
+				.addClass("categoryButton");
 		return tabs;
 	}
 
