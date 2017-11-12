@@ -3,10 +3,10 @@ package ffk.league.download;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.assertj.core.util.Lists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,7 +61,7 @@ public class SpreadsheetDownloader {
 		List<List<Object>> sheetData = response.getValues();
 		if (CollectionUtils.isEmpty(sheetData)) {
 			LOGGER.warn(String.format("No data found in the spreadsheet: %s range: %s", spreadsheetId, range));
-			return Lists.emptyList();
+			return Collections.emptyList();
 		} else {
 			LOGGER.info(String.format("Retrieving data from the spreadsheet: %s range: %s", spreadsheetId, range));
 			return sheetData;

@@ -17,18 +17,17 @@ public class LeagueApplication {
 		ApplicationContext context = SpringApplication.run(LeagueApplication.class, args);
 		Parser parser = (Parser) context.getBean("parser");
 
-		// while (true) {
-		try {
-			parser.parse();
-		} catch (RuntimeException e) {
-			LOGGER.error("broken", e);
+		while (true) {
+			try {
+				parser.parse();
+			} catch (RuntimeException e) {
+				LOGGER.error("broken", e);
+			}
+			try {
+				Thread.sleep(60000);
+			} catch (InterruptedException e) {
+				throw new IllegalStateException(e);
+			}
 		}
-		try {
-			Thread.sleep(60000);
-		} catch (InterruptedException e) {
-			throw new IllegalStateException(e);
-		}
-		// }
-
 	}
 }
