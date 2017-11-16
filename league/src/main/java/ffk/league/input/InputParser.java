@@ -26,8 +26,8 @@ public class InputParser {
 
 	private List<BoulderResult> parseBoulderResults(List<String> fields) {
 		List<BoulderResult> boulders = new ArrayList<>();
-		final int shift = 2;
-		for (int i = 0; i < 8; ++i) {
+		final int shift = 3;
+		for (int i = 0; i < 12; ++i) {
 			fields.add("");
 			fields.add("");
 			boulders.add(parseBoulderResult(fields.get(shift + i * 2), fields.get(shift + i * 2 + 1)));
@@ -36,11 +36,11 @@ public class InputParser {
 	}
 
 	private Competitor parseCompetitor(List<String> fields) {
-		return CompetitorsFactory.getOrCreateCompetitor(fields.get(0), fields.get(1));
+		return CompetitorsFactory.getOrCreateCompetitor(fields.get(1), fields.get(2));
 	}
 
 	public CompetitorAndPerformance parseResultLine(List<String> fields) {
-		if (fields.size() < 2 || StringUtils.isEmpty(fields.get(0)) || StringUtils.isEmpty(fields.get(1))) {
+		if (fields.size() < 2 || StringUtils.isEmpty(fields.get(1)) || StringUtils.isEmpty(fields.get(2))) {
 			return null;
 		}
 		List<BoulderResult> boulderResults = parseBoulderResults(fields);

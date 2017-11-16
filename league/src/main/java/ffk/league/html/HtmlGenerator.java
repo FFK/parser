@@ -111,7 +111,7 @@ public class HtmlGenerator {
 
 	private void addEditionColumnHeads(Element parent, String editionClass) {
 		String cssColor = "boulder";
-		for (int i = 1; i <= 8; ++i) {
+		for (int i = 1; i <= 12; ++i) {
 			parent.appendChild(createProblemColumnHead(i, editionClass, cssColor));
 		}
 	}
@@ -166,9 +166,9 @@ public class HtmlGenerator {
 		tr.appendChild(fullResTd);
 
 		String edition = editions.get(0);
-		for (int i = 0; i < 8; ++i) {
+		for (int i = 0; i < 12; ++i) {
 			Td boulderTd = new Td();
-			if (performncesByEdition.getMap().containsKey(edition)) {
+			if (performncesByEdition.getMap().containsKey(edition) && isBoulderForGroup(i, competitor.getGroup())) {
 				BoulderResult boulderResult = performncesByEdition.getMap().get(edition).getBoulderResults().get(i);
 				boulderTd.appendText(createBoulderResultLabel(boulderResult));
 			}
@@ -177,6 +177,14 @@ public class HtmlGenerator {
 		}
 
 		return tr.write() + "\n";
+	}
+
+	private static boolean isBoulderForGroup(int boulderNumber, String group) {
+		if (Arrays.asList("g14-15", "b14-15").contains(group)) {
+			return boulderNumber > 3;
+		} else {
+			return boulderNumber < 8;
+		}
 	}
 
 	private static String createTopAndBonusesLabel(Score score) {

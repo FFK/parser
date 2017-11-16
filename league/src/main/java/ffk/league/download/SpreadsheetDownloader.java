@@ -51,7 +51,7 @@ public class SpreadsheetDownloader {
 	}
 
 	private List<List<Object>> getSheetData(String spreadsheetId, String sheetName) {
-		String range = "'" + sheetName + "'" + "!A3:R1000";
+		String range = "'" + sheetName + "'" + "!A3:AA1000";
 		ValueRange response;
 		try {
 			response = sheets.spreadsheets().values().get(spreadsheetId, range).execute();
