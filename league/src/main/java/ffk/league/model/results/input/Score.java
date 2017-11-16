@@ -24,9 +24,9 @@ public class Score implements Comparable<Score> {
 			return Integer.compare(bonuses, o.bonuses);
 		}
 		if (topsTries != o.topsTries) {
-			return Integer.compare(topsTries, o.topsTries);
+			return Integer.compare(o.topsTries, topsTries);
 		}
-		return Integer.compare(bonusesTries, o.bonusesTries);
+		return Integer.compare(o.bonusesTries, bonusesTries);
 	}
 
 	public int getBonuses() {
