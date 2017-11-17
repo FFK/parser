@@ -40,7 +40,7 @@ public class InputParser {
 	}
 
 	public CompetitorAndPerformance parseResultLine(List<String> fields) {
-		if (fields.size() < 2 || StringUtils.isEmpty(fields.get(1)) || StringUtils.isEmpty(fields.get(2))) {
+		if (fields.size() < 3 || StringUtils.isEmpty(fields.get(1)) || StringUtils.isEmpty(fields.get(2))) {
 			return null;
 		}
 		List<BoulderResult> boulderResults = parseBoulderResults(fields);
