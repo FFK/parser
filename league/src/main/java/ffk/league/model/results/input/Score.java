@@ -20,11 +20,11 @@ public class Score implements Comparable<Score> {
 		if (tops != o.tops) {
 			return Integer.compare(tops, o.tops);
 		}
-		if (bonuses != o.bonuses) {
-			return Integer.compare(bonuses, o.bonuses);
-		}
 		if (topsTries != o.topsTries) {
 			return Integer.compare(o.topsTries, topsTries);
+		}
+		if (bonuses != o.bonuses) {
+			return Integer.compare(bonuses, o.bonuses);
 		}
 		return Integer.compare(o.bonusesTries, bonusesTries);
 	}
