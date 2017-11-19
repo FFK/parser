@@ -38,7 +38,7 @@ public class SpreadsheetDownloader {
 	public List<EditionResults> downloadAllEditions() {
 		List<EditionResults> res = new ArrayList<>();
 		for (int i = 0; i < spreadsheetIds.size(); ++i) {
-			res.add(downloadEdition(Integer.toString(i), spreadsheetIds.get(i), sheetNames.get(i)));
+			res.add(downloadEdition(Integer.toString(i), spreadsheetIds.get(i).trim(), sheetNames.get(i).trim()));
 		}
 		CompetitorsFactory.clear();
 		return res;
