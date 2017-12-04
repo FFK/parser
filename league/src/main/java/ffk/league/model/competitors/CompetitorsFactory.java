@@ -14,7 +14,7 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("ALEKSNDER", "ALEKSANDER");
 		replacementPartsMap.put("AMANADA", "AMANDA");
 		replacementPartsMap.put("ANASTASIJA", "ANASTASIYA");
-		replacementPartsMap.put("BANDOLERAS", "BANDERAS");
+		replacementPartsMap.put("BANDERAS", "BANDOLERAS");
 		replacementPartsMap.put("BARTŁOMIEJ", "BARTEK");
 		replacementPartsMap.put("BOGUSTOWICZ", "BOGUSŁOWICZ");
 		replacementPartsMap.put("DARIUSZ", "DAREK");
@@ -44,7 +44,7 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("MIĘTUS", "MIENTUS");
 		replacementPartsMap.put("PIĘTKOWSKA", "PIĄTKOWSKA");
 		replacementPartsMap.put("PIOTA", "PIOTR");
-		replacementPartsMap.put("RADOSŁAW", "RADEK");
+		replacementPartsMap.put("RADEK", "RADOSŁAW");
 		replacementPartsMap.put("SAS NOWOSIELSKI", "SAS-NOWOSIELSKI");
 		replacementPartsMap.put("SYMON", "SZYMON");
 		replacementPartsMap.put("TROJNAK", "TROJNAR");
