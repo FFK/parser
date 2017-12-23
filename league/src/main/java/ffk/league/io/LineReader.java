@@ -1,4 +1,4 @@
-package ffk.league.io.reader;
+package ffk.league.io;
 
 import java.io.IOException;
 import java.nio.file.Files;

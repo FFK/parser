@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import ffk.league.download.SpreadsheetDownloader;
 import ffk.league.git.GitCommiter;
 import ffk.league.html.HtmlGenerator;
-import ffk.league.io.writer.ResultWriter;
+import ffk.league.io.ResultWriter;
 import ffk.league.model.competitors.Competitor;
 import ffk.league.model.results.input.Performance;
 import ffk.league.model.results.input.PerformncesByEdition;

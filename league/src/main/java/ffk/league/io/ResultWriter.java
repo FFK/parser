@@ -1,4 +1,4 @@
-package ffk.league.io.writer;
+package ffk.league.io;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,7 +12,6 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import ffk.league.io.reader.LineReader;
 import ffk.league.model.results.output.Competition;
 import ffk.league.parser.Parser;
 

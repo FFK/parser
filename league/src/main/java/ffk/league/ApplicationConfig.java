@@ -12,9 +12,8 @@ import ffk.league.download.SpreadsheetServiceProvider;
 import ffk.league.git.GitCommiter;
 import ffk.league.html.HtmlGenerator;
 import ffk.league.input.InputParser;
-import ffk.league.io.reader.LineReader;
-import ffk.league.io.reader.ResultsReader;
-import ffk.league.io.writer.ResultWriter;
+import ffk.league.io.LineReader;
+import ffk.league.io.ResultWriter;
 import ffk.league.parser.Parser;
 
 @Configuration
@@ -47,11 +46,6 @@ public class ApplicationConfig {
 	@Bean
 	public Parser parser() {
 		return new Parser(settings.isAutoCommit(), settings.getExcludedEditions());
-	}
-
-	@Bean
-	public ResultsReader resultsReader() {
-		return new ResultsReader(settings.getSeason());
 	}
 
 	@Bean
