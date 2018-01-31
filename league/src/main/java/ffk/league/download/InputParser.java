@@ -1,4 +1,4 @@
-package ffk.league.input;
+package ffk.league.download;
 
 import java.util.ArrayList;
 import java.util.List;

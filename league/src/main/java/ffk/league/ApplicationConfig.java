@@ -7,11 +7,11 @@ import org.springframework.context.annotation.Configuration;
 
 import com.google.api.services.sheets.v4.Sheets;
 
+import ffk.league.download.InputParser;
 import ffk.league.download.SpreadsheetDownloader;
 import ffk.league.download.SpreadsheetServiceProvider;
 import ffk.league.git.GitCommiter;
 import ffk.league.html.HtmlGenerator;
-import ffk.league.input.InputParser;
 import ffk.league.io.LineReader;
 import ffk.league.io.ResultWriter;
 import ffk.league.parser.Parser;
