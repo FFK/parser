@@ -65,7 +65,7 @@ public class SpreadsheetServiceProvider {
 
 	private static Credential authorize() {
 		// Load client secrets.
-		InputStream in = SpreadsheetDownloader.class.getResourceAsStream("/client_id.json");
+		InputStream in = SpreadsheetDownloader.class.getResourceAsStream("/credentials.json");
 		GoogleClientSecrets clientSecrets;
 		try {
 			clientSecrets = GoogleClientSecrets.load(jsonFactory, new InputStreamReader(in));
