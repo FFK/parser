@@ -15,6 +15,7 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("AMANADA", "AMANDA");
 		replacementPartsMap.put("ANASTASIJA", "ANASTASIYA");
 		replacementPartsMap.put("BANDERAS", "BANDOLERAS");
+		replacementPartsMap.put("BARBARA", "BASIA");
 		replacementPartsMap.put("BARTŁOMIEJ", "BARTEK");
 		replacementPartsMap.put("BOGUSTOWICZ", "BOGUSŁOWICZ");
 		replacementPartsMap.put("DARIUSZ", "DAREK");
