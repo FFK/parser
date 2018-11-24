@@ -58,6 +58,7 @@ public final class CompetitorsFactory {
 		replacementPartsMap.put("ZŁACHOWSKA", "ZŁAKOWSKA");
 		replacementPartsMap.put("ZUZANNA", "ZUZA");
 		replacementPartsMap.put("ZUZIA", "ZUZA");
+		replacementPartsMap.put("ZUZA", "ZUZANNA");
 	}
 	private static Map<String, String> renamingMap = new HashMap<>();
 	static {
