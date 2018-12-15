@@ -71,6 +71,6 @@ public class InputParser {
 	}
 
 	private Sex parseSex(String sex) {
-		return "K".equals(sex.toUpperCase().trim()) ? Sex.FEMELE : Sex.MALE;
+		return "K".equals(sex.toUpperCase().trim()) ? Sex.FEMALE : Sex.MALE;
 	}
 }
