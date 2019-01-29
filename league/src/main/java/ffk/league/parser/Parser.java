@@ -1,5 +1,6 @@
 package ffk.league.parser;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -52,6 +53,7 @@ public class Parser {
 		LOGGER.info("Geathering results ended succesfully");
 		LOGGER.info("Calculating scores started");
 		calculateScores(results);
+		resultWriter.writeFile("transport.csv", Arrays.asList(results.toString().split("\\r?\\n")));
 		LOGGER.info("Calculating scores ended succesfully");
 		LOGGER.info("Writing files started");
 		resultWriter.createResultFiles(htmlGenerator.createCompetitiorRows(results));

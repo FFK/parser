@@ -43,9 +43,9 @@ public class ResultWriter {
 		File bottomContentFile = new File(classLoader.getResource(season + "/BottomContent.html").getFile());
 
 		List<String> lines = new ArrayList<>();
-		lines.addAll(lineReader.getLines(topContentFile.toPath()));
 		lines.add(getMenuLine(competition));
 		lines.addAll(lineReader.getLines(tableHeaderFile.toPath()));
+		lines.addAll(lineReader.getLines(topContentFile.toPath()));
 		lines.add(rows);
 		lines.addAll(lineReader.getLines(tableFooterFile.toPath()));
 		lines.addAll(lineReader.getLines(bottomContentFile.toPath()));
