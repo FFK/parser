@@ -82,6 +82,7 @@ public class HtmlGenerator {
 		tabs.appendChild(createTab(Competition.JUNIOR_WOMEN));
 		tabs.appendChild(createTab(Competition.VETERAN_MEN));
 		tabs.appendChild(createTab(Competition.VETERAN_WOMEN));
+		tabs.appendElement("button").addClass("go").text("link do nowe strony wyników (w budowie)").attr("onclick", "javascript:window.location.href='https://climbing-competitions.appspot.com/scoreCard'");
 		tabs.appendElement("button").addClass("go").text("go").attr("onclick", "go();");
 		tabs.appendElement("hr");
 		return tabs;

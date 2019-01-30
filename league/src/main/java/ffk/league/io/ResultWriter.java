@@ -99,7 +99,10 @@ public class ResultWriter {
 			stringBuilder.append(getMenuLabel(c));
 			stringBuilder.append("</a>\n");
 		}
-		stringBuilder.append("<button class=\"go\" onclick=\"go();\">go</button>");
+		stringBuilder.append("<button class=\"go\" "
+				+ "onclick=\"javascript:window.location.href='https://climbing-competitions.appspot.com/scoreCard'\">"
+				+ "link do nowej strony wyników (w budowie)</button>");
+		//stringBuilder.append("<button class=\"go\" onclick=\"go();\">go</button>");
 		stringBuilder.append("<hr />");
 		return stringBuilder.toString();
 	}
